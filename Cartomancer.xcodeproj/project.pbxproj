@@ -9,11 +9,10 @@
 /* Begin PBXBuildFile section */
 		6D1C2DA41AD482500086D147 /* tarot.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2DA31AD482500086D147 /* tarot.png */; };
 		6D1C2DA61AD483B40086D147 /* tarotside.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2DA51AD483B40086D147 /* tarotside.png */; };
-		6D1C2DA81AD4AEB80086D147 /* felt.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2DA71AD4AEB80086D147 /* felt.png */; };
+		6D1C2DAA1AD5B7B20086D147 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2DA91AD5B7B20086D147 /* default.realm */; };
 		6D4262E61AD45EEF00F1310B /* curtains.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D4262E51AD45EEF00F1310B /* curtains.png */; };
 		6D4262EA1AD4624E00F1310B /* CardSpreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4262E81AD4624E00F1310B /* CardSpreadViewController.m */; };
 		6D4262EB1AD4624E00F1310B /* CardSpreadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D4262E91AD4624E00F1310B /* CardSpreadViewController.xib */; };
-		6D4262ED1AD4726D00F1310B /* kimcrying.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D4262EC1AD4726D00F1310B /* kimcrying.png */; };
 		772212FA1AD36BB200A7722C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 772212F91AD36BB200A7722C /* main.m */; };
 		772212FD1AD36BB200A7722C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 772212FC1AD36BB200A7722C /* AppDelegate.m */; };
 		772213051AD36BB200A7722C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 772213041AD36BB200A7722C /* Images.xcassets */; };
@@ -38,6 +37,7 @@
 		6D1C2DA31AD482500086D147 /* tarot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tarot.png; sourceTree = "<group>"; };
 		6D1C2DA51AD483B40086D147 /* tarotside.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tarotside.png; sourceTree = "<group>"; };
 		6D1C2DA71AD4AEB80086D147 /* felt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = felt.png; sourceTree = "<group>"; };
+		6D1C2DA91AD5B7B20086D147 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; name = default.realm; path = ../default.realm; sourceTree = "<group>"; };
 		6D4262E51AD45EEF00F1310B /* curtains.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = curtains.png; sourceTree = "<group>"; };
 		6D4262E71AD4624E00F1310B /* CardSpreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardSpreadViewController.h; sourceTree = "<group>"; };
 		6D4262E81AD4624E00F1310B /* CardSpreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardSpreadViewController.m; sourceTree = "<group>"; };
@@ -82,7 +82,6 @@
 		772212EB1AD36BB200A7722C = {
 			isa = PBXGroup;
 			children = (
-				7722131F1AD36C9500A7722C /* libc++.dylib */,
 				772212F61AD36BB200A7722C /* Cartomancer */,
 				772213101AD36BB200A7722C /* CartomancerTests */,
 				772212F51AD36BB200A7722C /* Products */,
@@ -126,6 +125,8 @@
 			children = (
 				772212F81AD36BB200A7722C /* Info.plist */,
 				772212F91AD36BB200A7722C /* main.m */,
+				6D1C2DA91AD5B7B20086D147 /* default.realm */,
+				7722131F1AD36C9500A7722C /* libc++.dylib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -228,8 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D4262E61AD45EEF00F1310B /* curtains.png in Resources */,
-				6D4262ED1AD4726D00F1310B /* kimcrying.png in Resources */,
-				6D1C2DA81AD4AEB80086D147 /* felt.png in Resources */,
+				6D1C2DAA1AD5B7B20086D147 /* default.realm in Resources */,
 				6D1C2DA41AD482500086D147 /* tarot.png in Resources */,
 				772213081AD36BB200A7722C /* LaunchScreen.xib in Resources */,
 				6D4262EB1AD4624E00F1310B /* CardSpreadViewController.xib in Resources */,
