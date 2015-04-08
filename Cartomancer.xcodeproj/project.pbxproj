@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D1C2DA41AD482500086D147 /* tarot.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2DA31AD482500086D147 /* tarot.png */; };
+		6D1C2DA61AD483B40086D147 /* tarotside.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2DA51AD483B40086D147 /* tarotside.png */; };
+		6D1C2DA81AD4AEB80086D147 /* felt.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2DA71AD4AEB80086D147 /* felt.png */; };
+		6D4262E61AD45EEF00F1310B /* curtains.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D4262E51AD45EEF00F1310B /* curtains.png */; };
+		6D4262EA1AD4624E00F1310B /* CardSpreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4262E81AD4624E00F1310B /* CardSpreadViewController.m */; };
+		6D4262EB1AD4624E00F1310B /* CardSpreadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D4262E91AD4624E00F1310B /* CardSpreadViewController.xib */; };
+		6D4262ED1AD4726D00F1310B /* kimcrying.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D4262EC1AD4726D00F1310B /* kimcrying.png */; };
 		772212FA1AD36BB200A7722C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 772212F91AD36BB200A7722C /* main.m */; };
 		772212FD1AD36BB200A7722C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 772212FC1AD36BB200A7722C /* AppDelegate.m */; };
-		772213001AD36BB200A7722C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 772212FF1AD36BB200A7722C /* ViewController.m */; };
-		772213031AD36BB200A7722C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772213011AD36BB200A7722C /* Main.storyboard */; };
 		772213051AD36BB200A7722C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 772213041AD36BB200A7722C /* Images.xcassets */; };
 		772213081AD36BB200A7722C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 772213061AD36BB200A7722C /* LaunchScreen.xib */; };
 		772213141AD36BB200A7722C /* CartomancerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 772213131AD36BB200A7722C /* CartomancerTests.m */; };
@@ -30,14 +35,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D1C2DA31AD482500086D147 /* tarot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tarot.png; sourceTree = "<group>"; };
+		6D1C2DA51AD483B40086D147 /* tarotside.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tarotside.png; sourceTree = "<group>"; };
+		6D1C2DA71AD4AEB80086D147 /* felt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = felt.png; sourceTree = "<group>"; };
+		6D4262E51AD45EEF00F1310B /* curtains.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = curtains.png; sourceTree = "<group>"; };
+		6D4262E71AD4624E00F1310B /* CardSpreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardSpreadViewController.h; sourceTree = "<group>"; };
+		6D4262E81AD4624E00F1310B /* CardSpreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardSpreadViewController.m; sourceTree = "<group>"; };
+		6D4262E91AD4624E00F1310B /* CardSpreadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardSpreadViewController.xib; sourceTree = "<group>"; };
+		6D4262EC1AD4726D00F1310B /* kimcrying.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kimcrying.png; sourceTree = "<group>"; };
 		772212F41AD36BB200A7722C /* Cartomancer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cartomancer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		772212F81AD36BB200A7722C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		772212F91AD36BB200A7722C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		772212FB1AD36BB200A7722C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		772212FC1AD36BB200A7722C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		772212FE1AD36BB200A7722C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		772212FF1AD36BB200A7722C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		772213021AD36BB200A7722C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		772213041AD36BB200A7722C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		772213071AD36BB200A7722C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		7722130D1AD36BB200A7722C /* CartomancerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CartomancerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,13 +103,18 @@
 			children = (
 				772212FB1AD36BB200A7722C /* AppDelegate.h */,
 				772212FC1AD36BB200A7722C /* AppDelegate.m */,
-				772212FE1AD36BB200A7722C /* ViewController.h */,
-				772212FF1AD36BB200A7722C /* ViewController.m */,
-				772213011AD36BB200A7722C /* Main.storyboard */,
+				6D4262E71AD4624E00F1310B /* CardSpreadViewController.h */,
+				6D4262E81AD4624E00F1310B /* CardSpreadViewController.m */,
+				6D4262E91AD4624E00F1310B /* CardSpreadViewController.xib */,
 				772213041AD36BB200A7722C /* Images.xcassets */,
 				772213061AD36BB200A7722C /* LaunchScreen.xib */,
 				7722131D1AD36C7F00A7722C /* Realm.framework */,
 				772212F71AD36BB200A7722C /* Supporting Files */,
+				6D4262EC1AD4726D00F1310B /* kimcrying.png */,
+				6D1C2DA71AD4AEB80086D147 /* felt.png */,
+				6D1C2DA31AD482500086D147 /* tarot.png */,
+				6D1C2DA51AD483B40086D147 /* tarotside.png */,
+				6D4262E51AD45EEF00F1310B /* curtains.png */,
 				772213211AD36CAE00A7722C /* Card.h */,
 				772213221AD36CAE00A7722C /* Card.m */,
 			);
@@ -212,9 +227,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				772213031AD36BB200A7722C /* Main.storyboard in Resources */,
+				6D4262E61AD45EEF00F1310B /* curtains.png in Resources */,
+				6D4262ED1AD4726D00F1310B /* kimcrying.png in Resources */,
+				6D1C2DA81AD4AEB80086D147 /* felt.png in Resources */,
+				6D1C2DA41AD482500086D147 /* tarot.png in Resources */,
 				772213081AD36BB200A7722C /* LaunchScreen.xib in Resources */,
+				6D4262EB1AD4624E00F1310B /* CardSpreadViewController.xib in Resources */,
 				772213051AD36BB200A7722C /* Images.xcassets in Resources */,
+				6D1C2DA61AD483B40086D147 /* tarotside.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				772213001AD36BB200A7722C /* ViewController.m in Sources */,
+				6D4262EA1AD4624E00F1310B /* CardSpreadViewController.m in Sources */,
 				772212FD1AD36BB200A7722C /* AppDelegate.m in Sources */,
 				772212FA1AD36BB200A7722C /* main.m in Sources */,
 				772213231AD36CAE00A7722C /* Card.m in Sources */,
@@ -258,14 +278,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		772213011AD36BB200A7722C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				772213021AD36BB200A7722C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		772213061AD36BB200A7722C /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -364,6 +376,7 @@
 				INFOPLIST_FILE = Cartomancer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -378,6 +391,7 @@
 				INFOPLIST_FILE = Cartomancer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -434,6 +448,7 @@
 				772213191AD36BB200A7722C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7722131A1AD36BB200A7722C /* Build configuration list for PBXNativeTarget "CartomancerTests" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +457,7 @@
 				7722131C1AD36BB200A7722C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

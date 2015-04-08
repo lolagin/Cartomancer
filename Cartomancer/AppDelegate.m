@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "CardSpreadViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    
+    
+        self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
+    CardSpreadViewController *csvc = [[CardSpreadViewController alloc]init];
+    UINavigationController *masterNavCon = [[UINavigationController alloc]initWithRootViewController:csvc];
+    
+    self.window.rootViewController = masterNavCon;
+    self.window.backgroundColor = [UIColor greenColor];
+    [self.window makeKeyAndVisible];
+    
     // Override point for customization after application launch.
     return YES;
 }
