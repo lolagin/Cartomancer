@@ -12,6 +12,7 @@
 
 @interface Card : RLMObject
 
+@property NSString *key;
 @property NSString *name;
 @property NSString *upDescription;
 @property NSString *reversedDescription;
