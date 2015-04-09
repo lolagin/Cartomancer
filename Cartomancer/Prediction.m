@@ -8,6 +8,18 @@
 
 #import "Prediction.h"
 
+@interface Prediction () {
+    
+}
+- (NSArray *)RLMResultsToNSArray:(RLMResults *)results;
+
+- (NSMutableArray *)shuffleDeck:(NSArray *)resultsArray;
+
+- (NSArray *)pickCelticCrossTen:(NSMutableArray *)shuffledDeck;
+
+
+@end
+
 @implementation Prediction
 
 - (NSArray *)RLMResultsToNSArray:(RLMResults *)results {
@@ -29,17 +41,23 @@
 - (NSArray *)pickCelticCrossTen:(NSMutableArray *)shuffledDeck {
     // load the shuffled Deck (78 cards), strip to the first 10
     
-    NSArray *celticCrossTen = [shuffledDeck subarrayWithRange:NSMakeRange(0, 9)];
+    NSMutableArray *celticCrossTen = [shuffledDeck subarrayWithRange:NSMakeRange(0, 10)];
     // return these
     return celticCrossTen;
     
 }
 
-//- (NSString*)findInString:(NSString*)string
-//        replaceWithString:(NSString*)stringToReplaceWith
-//{
-//    return [input stringByReplacingOccurrencesOfString:string
-//                                            withString:stringToReplaceWith];
-//}
++ (NSArray *)celticCross {
+    Prediction *prediction = [[Prediction alloc] init];
+    
+    NSArray *allCards = [prediction RLMResultsToNSArray:[Card allObjects]];
+    NSArray *randomizedPrediction = [prediction shuffleDeck:allCards];
+    
+    NSMutableArray *theBigTenCards = [prediction pickCelticCrossTen:randomizedPrediction];
+    
+    
+    NSLog(@"Mutable array : %@", theBigTenCards);
+    return theBigTenCards;
+}
 
 @end
