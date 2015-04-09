@@ -18,6 +18,6 @@
 - (NSArray *)arrayFromText;
 
 
-- (NSArray *)RLMResultsToNSArray:(RLMResults *)results;
+- (NSMutableArray *)shuffleDeck:(NSArray *)resultsArray;
 
 @end

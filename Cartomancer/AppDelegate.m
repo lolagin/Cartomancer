@@ -11,6 +11,7 @@
 #import <Realm/Realm.h> 
 #import "Card.h"
 #import "Prediction.h"
+#import "DataLoader.h"
 
 //#import "DataLoader.h"
 
@@ -42,13 +43,14 @@
     RLMRealm *realm = [RLMRealm defaultRealm];
     NSLog(@"%@", [realm path]);
 
-    NSLog(@"these files were written to the Realm DB\n%@", [[Card allObjects] description]);
+    //NSLog(@"these files were written to the Realm DB\n%@", [[Card allObjects] description]);
     
     Prediction *prediction = [[Prediction alloc] init];
-    NSArray *tencards = [prediction RLMResultsToNSArray:[Card allObjects]];
+    NSArray *allCards = [prediction RLMResultsToNSArray:[Card allObjects]];
 
-    NSMutableArray *shuffleThisDeck = [tencards];
-    NSLog(@"Mutable array : %@", tencards);
+    //NSMutableArray *randomPrediction = [[NSMutableArray alloc] init];
+    
+    NSLog(@"Mutable array : %@", [prediction shuffleDeck:allCards]);
 
     // Override point for customization after application launch.
     return YES;

@@ -13,7 +13,8 @@
 @interface Prediction : NSObject
 
 - (NSArray *)RLMResultsToNSArray:(RLMResults *)results;
-//- (NSMutableArray *)shuffleDeck:(NSArray *)resultsArray;
+- (NSMutableArray *)shuffleDeck:(NSArray *)resultsArray;
+
 @property (nonatomic, strong) NSArray *tenCards;
 
 @end

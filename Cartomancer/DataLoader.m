@@ -64,12 +64,12 @@
     
 }
 
-- (NSArray *)RLMResultsToNSArray:(RLMResults *)results {
-    NSMutableArray *array = [NSMutableArray arrayWithCapacity:results.count];
-    for (RLMObject *object in results) {
-        [array addObject:object];
+- (NSMutableArray *)shuffleDeck:(NSArray *)resultsArray {
+    NSMutableArray *shuffledDeck = [resultsArray mutableCopy];
+    for (int i = [shuffledDeck count] - 1; i > 0; i--) {
+        [shuffledDeck exchangeObjectAtIndex:(arc4random() % ([shuffledDeck count] - 1)) withObjectAtIndex:i];
     }
-    return array;
+    return shuffledDeck;
 }
 
 

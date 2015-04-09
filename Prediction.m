@@ -18,13 +18,14 @@
     return array;
 }
 
-//- (NSMutableArray *)shuffleDeck:(NSArray *)resultsArray {
-//    NSMutableArray *shuffledDeck = [resultsArray mutableCopy];
-//    for (int i = [shuffledDeck count] - 1; i > 0; i--) {
-//        [shuffledDeck exchangeObjectAtIndex:(arc4random() % ([shuffledDeck count] - 1)) withObjectAtIndex:i];
-//    }
-//    return shuffledDeck;
-//}
+- (NSMutableArray *)shuffleDeck:(NSArray *)resultsArray {
+    NSMutableArray *shuffledDeck = [resultsArray mutableCopy];
+    for (int i = [shuffledDeck count] - 1; i > 0; i--) {
+        [shuffledDeck exchangeObjectAtIndex:(arc4random() % ([shuffledDeck count] - 1)) withObjectAtIndex:i];
+    }
+    return shuffledDeck;
+}
+
 
 
 @end
