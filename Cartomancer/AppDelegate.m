@@ -75,7 +75,8 @@
     NSArray *allCards = [prediction RLMResultsToNSArray:[Card allObjects]];
     NSArray *randomizedPrediction = [prediction shuffleDeck:allCards];
 
-    NSArray *theTenMostImportantCardsRightNow = [randomizedPrediction ]
+    NSArray *theTenMostImportantCardsRightNow = [[Prediction alloc] init];
+    
     
     
     NSLog(@"Mutable array : %@", randomizedPrediction);

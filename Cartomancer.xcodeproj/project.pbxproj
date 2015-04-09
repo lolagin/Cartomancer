@@ -102,6 +102,7 @@
 		7722131E1AD36C7F00A7722C /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7722131D1AD36C7F00A7722C /* Realm.framework */; };
 		772213201AD36C9500A7722C /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7722131F1AD36C9500A7722C /* libc++.dylib */; };
 		772213231AD36CAE00A7722C /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 772213221AD36CAE00A7722C /* Card.m */; };
+		772E4BE91AD6FEF5006CAE1F /* Prediction.m in Sources */ = {isa = PBXBuildFile; fileRef = 772E4BE81AD6FEF5006CAE1F /* Prediction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -218,6 +219,8 @@
 		7722131F1AD36C9500A7722C /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		772213211AD36CAE00A7722C /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
 		772213221AD36CAE00A7722C /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		772E4BE71AD6FEF5006CAE1F /* Prediction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prediction.h; sourceTree = "<group>"; };
+		772E4BE81AD6FEF5006CAE1F /* Prediction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Prediction.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -347,6 +350,8 @@
 		772212F61AD36BB200A7722C /* Cartomancer */ = {
 			isa = PBXGroup;
 			children = (
+				772E4BE71AD6FEF5006CAE1F /* Prediction.h */,
+				772E4BE81AD6FEF5006CAE1F /* Prediction.m */,
 				772212FB1AD36BB200A7722C /* AppDelegate.h */,
 				772212FC1AD36BB200A7722C /* AppDelegate.m */,
 				6D4262E71AD4624E00F1310B /* CardSpreadViewController.h */,
@@ -586,6 +591,7 @@
 				772212FD1AD36BB200A7722C /* AppDelegate.m in Sources */,
 				772212FA1AD36BB200A7722C /* main.m in Sources */,
 				6D1C2FD51AD648390086D147 /* DefListTableViewController.m in Sources */,
+				772E4BE91AD6FEF5006CAE1F /* Prediction.m in Sources */,
 				772213231AD36CAE00A7722C /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
