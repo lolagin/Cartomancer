@@ -8,6 +8,7 @@
 
 #import "Prediction.h"
 
+
 @interface Prediction () {
     
 }
@@ -22,19 +23,23 @@
 
 @implementation Prediction
 
+
 // Suggestions for a more generalised version:
 //
 // • set up a kConstants pair of files 
 //
 //
 
-- (instancetype)initWithRealm {
+- (instancetype)init {
     self = [super init];
     if (self) {
         RLMRealm *realm = [RLMRealm defaultRealm];
     }
     return self;
 }
+
+
+
 
 
 - (NSArray *)RLMResultsToNSArray:(RLMResults *)results {
@@ -56,7 +61,7 @@
 - (NSArray *)pickCelticCrossTen:(NSMutableArray *)shuffledDeck {
     // load the shuffled Deck (78 cards), strip to the first 10
     
-    NSMutableArray *celticCrossTen = [shuffledDeck subarrayWithRange:NSMakeRange(0, 10)];
+    NSMutableArray *celticCrossTen = [[shuffledDeck subarrayWithRange:NSMakeRange(0, 10)]copy];
     // return these
     return celticCrossTen;
     

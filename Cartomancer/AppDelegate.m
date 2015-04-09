@@ -8,13 +8,6 @@
 
 #import "AppDelegate.h"
 #import "CardSpreadViewController.h"
-#import <Realm/Realm.h> 
-#import "Card.h"
-#import "Prediction.h"
-#import "DataLoader.h"
-
-
-//#import "DataLoader.h"
 
 @interface AppDelegate ()
 
@@ -29,18 +22,19 @@
     UINavigationController *masterNavCon = [[UINavigationController alloc]initWithRootViewController:csvc];
     
     self.window.rootViewController = masterNavCon;
-    self.window.backgroundColor = [UIColor greenColor];
+//    self.window.backgroundColor = [UIColor greenColor];
     [self.window makeKeyAndVisible];
     
+
     
+
+//    RLMRealm *realm = [RLMRealm defaultRealm];
+//    NSLog(@"%@", [realm path]);
+
     
     // ONLY LOAD THIS DATABASE FROM THE JSON FILE ONCE AND ONCE ONLY - done! - leave this commented out
-    //DataLoader *test  = [[DataLoader alloc] init];
-    //[test pullDataFromTextFile];
-    //[test pullPredictionOutOfDeck];
     
-    [Prediction celticCross];
-    
+
     // Override point for customization after application launch.
     return YES;
 }
