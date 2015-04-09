@@ -8,7 +8,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardSpreadViewController">
             <connections>
-                <outlet property="sigTarot" destination="XS7-xD-9Fn" id="LJ5-gO-sON"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outletCollection property="imageViews" destination="wiY-Kh-drd" id="9Dz-aM-SaB"/>
                 <outletCollection property="imageViews" destination="qkp-ap-94t" id="VY2-kr-4JS"/>
@@ -19,6 +18,7 @@
                 <outletCollection property="imageViews" destination="s5J-9k-dWI" id="KlY-fh-vIf"/>
                 <outletCollection property="imageViews" destination="fFr-Ta-Qh0" id="cGz-99-veZ"/>
                 <outletCollection property="imageViews" destination="hne-VE-uTS" id="QYE-kx-hDr"/>
+                <outletCollection property="imageViews" destination="XS7-xD-9Fn" id="VRR-Zk-A6n"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

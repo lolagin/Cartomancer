@@ -10,6 +10,7 @@
 		6D1C2DA41AD482500086D147 /* tarot.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2DA31AD482500086D147 /* tarot.png */; };
 		6D1C2DA61AD483B40086D147 /* tarotside.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2DA51AD483B40086D147 /* tarotside.png */; };
 		6D1C2DAA1AD5B7B20086D147 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2DA91AD5B7B20086D147 /* default.realm */; };
+		6D1C2DAF1AD610FA0086D147 /* masterblaster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2DAE1AD610FA0086D147 /* masterblaster.jpg */; };
 		6D4262E61AD45EEF00F1310B /* curtains.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D4262E51AD45EEF00F1310B /* curtains.png */; };
 		6D4262EA1AD4624E00F1310B /* CardSpreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4262E81AD4624E00F1310B /* CardSpreadViewController.m */; };
 		6D4262EB1AD4624E00F1310B /* CardSpreadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D4262E91AD4624E00F1310B /* CardSpreadViewController.xib */; };
@@ -36,13 +37,12 @@
 /* Begin PBXFileReference section */
 		6D1C2DA31AD482500086D147 /* tarot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tarot.png; sourceTree = "<group>"; };
 		6D1C2DA51AD483B40086D147 /* tarotside.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tarotside.png; sourceTree = "<group>"; };
-		6D1C2DA71AD4AEB80086D147 /* felt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = felt.png; sourceTree = "<group>"; };
 		6D1C2DA91AD5B7B20086D147 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; name = default.realm; path = ../default.realm; sourceTree = "<group>"; };
+		6D1C2DAE1AD610FA0086D147 /* masterblaster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = masterblaster.jpg; path = ../../../../../Downloads/masterblaster.jpg; sourceTree = "<group>"; };
 		6D4262E51AD45EEF00F1310B /* curtains.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = curtains.png; sourceTree = "<group>"; };
 		6D4262E71AD4624E00F1310B /* CardSpreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardSpreadViewController.h; sourceTree = "<group>"; };
 		6D4262E81AD4624E00F1310B /* CardSpreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardSpreadViewController.m; sourceTree = "<group>"; };
 		6D4262E91AD4624E00F1310B /* CardSpreadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardSpreadViewController.xib; sourceTree = "<group>"; };
-		6D4262EC1AD4726D00F1310B /* kimcrying.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kimcrying.png; sourceTree = "<group>"; };
 		772212F41AD36BB200A7722C /* Cartomancer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cartomancer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		772212F81AD36BB200A7722C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		772212F91AD36BB200A7722C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -109,9 +109,8 @@
 				772213061AD36BB200A7722C /* LaunchScreen.xib */,
 				7722131D1AD36C7F00A7722C /* Realm.framework */,
 				772212F71AD36BB200A7722C /* Supporting Files */,
-				6D4262EC1AD4726D00F1310B /* kimcrying.png */,
-				6D1C2DA71AD4AEB80086D147 /* felt.png */,
 				6D1C2DA31AD482500086D147 /* tarot.png */,
+				6D1C2DAE1AD610FA0086D147 /* masterblaster.jpg */,
 				6D1C2DA51AD483B40086D147 /* tarotside.png */,
 				6D4262E51AD45EEF00F1310B /* curtains.png */,
 				772213211AD36CAE00A7722C /* Card.h */,
@@ -229,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D4262E61AD45EEF00F1310B /* curtains.png in Resources */,
+				6D1C2DAF1AD610FA0086D147 /* masterblaster.jpg in Resources */,
 				6D1C2DAA1AD5B7B20086D147 /* default.realm in Resources */,
 				6D1C2DA41AD482500086D147 /* tarot.png in Resources */,
 				772213081AD36BB200A7722C /* LaunchScreen.xib in Resources */,
@@ -376,7 +376,7 @@
 				INFOPLIST_FILE = Cartomancer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -391,7 +391,7 @@
 				INFOPLIST_FILE = Cartomancer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

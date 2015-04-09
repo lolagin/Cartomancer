@@ -9,36 +9,99 @@
 #import "CardSpreadViewController.h"
 #import "Card.h"
 
-@interface CardSpreadViewController ()<UIGestureRecognizerDelegate>
+@interface CardSpreadViewController ()
 @property (nonatomic, strong) IBOutletCollection(UIImageView) NSArray *imageViews;
-@property (weak, nonatomic) IBOutlet UIImageView *sigTarot;
+
 
 
 
 @property (strong, nonatomic) UITapGestureRecognizer *tappy;
-@property (strong, nonatomic) UISwipeGestureRecognizer *swish;
-@property (assign) NSUInteger masterBlaster;
+@property (strong, nonatomic) UISwipeGestureRecognizer *forwardSwish;
+@property (strong, nonatomic) UISwipeGestureRecognizer *backSwish;
+//@property (assign) NSUInteger masterBlaster;
+@property (strong, nonatomic) UILabel *TarotLore;
 
 
 
 @end
 
-@implementation CardSpreadViewController
+@implementation CardSpreadViewController {
+    int i;
+    CGRect superFrame;
+}
 
-- (void)viewDidLoad {
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    i = 0;
     
+    superFrame = self.view.superview.frame;
+    self.TarotLore = [[UILabel alloc]initWithFrame:self.view.superview.frame];
+    self.TarotLore.alpha = 0.2;
+    self.TarotLore.backgroundColor = [UIColor purpleColor];
+    self.TarotLore.textAlignment = NSTextAlignmentCenter;
+    self.TarotLore.layer.borderWidth = 5;
+    self.TarotLore.layer.borderColor = [UIColor greenColor].CGColor;
+    self.TarotLore.textColor = [UIColor whiteColor];
     
-    [super viewDidLoad];
+    self.tappy = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapHappens)];
+    self.forwardSwish = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(dealForward)];
+    self.backSwish = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(dealBack)];
+    self.tappy.numberOfTapsRequired = 1;
+    [self.forwardSwish setDirection:UISwipeGestureRecognizerDirectionLeft];
+    [self.backSwish setDirection:UISwipeGestureRecognizerDirectionRight];
+    [self.view addGestureRecognizer:self.tappy];
+    [self.view addGestureRecognizer:self.forwardSwish];
+    [self.view addGestureRecognizer:self.backSwish];
+    [self.view addSubview:self.TarotLore];
     [self.imageViews enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        ((UIImageView *)obj).image = [UIImage imageNamed:@"kimCrying"];
+        ((UIImageView *)obj).alpha = 0;
     }];
-    self.sigTarot.image = [UIImage imageNamed:@"kimCrying"];
     // Do any additional setup after loading the view from its nib.
     
 }
+-(void)tapHappens {
+    [self dealForward];
 
+}
+-(void)dealForward {
+    if (i >= 10) {
+        i = 9;
+        return;
+    }
+//    else if (i == 1){
+//   UIImage *image = cardray[i].image
+//        UIImage *PortraitImage = [[UIImage alloc] initWithCGImage: image.CGImage
+//                                                             scale: 1.0
+//                                                      orientation: UIImageOrientationLeft];
+//    DO SOMETHING W IMAGE
+//    }
 
+    [UIView animateWithDuration:1.4 animations:^{
+        self.TarotLore.alpha = 0;
+    }];
+    self.TarotLore.text = @"The Four Of Lulz. This card means stuff";
+    [UIView animateWithDuration:1.4 animations:^{
+    ((UIImageView *)self.imageViews[i]).alpha = 1;
+                }];
 
+    [UIView animateWithDuration:2.1 animations:^{
+           self.TarotLore.alpha = 0.7;
+                    ((UIImageView *)self.imageViews[i]).image = [UIImage imageNamed:@"masterblaster.jpg"];
+    }];
+    i++;
+}
+
+-(void)dealBack {
+    
+    if (i <= 0 || i >= 10) {
+        return;
+    }
+    [UIView animateWithDuration:0.9 animations:^{
+        ((UIImageView *)self.imageViews[i]).alpha = 0;
+    }];
+    i--;
+    
+}
 
 
 - (void)didReceiveMemoryWarning {
@@ -56,9 +119,6 @@
 }
 */
 
--(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
-    return YES;
-}
 
 
 
