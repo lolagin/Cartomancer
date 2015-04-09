@@ -75,11 +75,10 @@
     NSArray *allCards = [prediction RLMResultsToNSArray:[Card allObjects]];
     NSArray *randomizedPrediction = [prediction shuffleDeck:allCards];
 
-    NSArray *theTenMostImportantCardsRightNow = [[Prediction alloc] init];
+    NSArray *theBigTenCards = [prediction pickCelticCrossTen:randomizedPrediction];
     
     
-    
-    NSLog(@"Mutable array : %@", randomizedPrediction);
+    NSLog(@"Mutable array : %@", theBigTenCards);
     
 }
 //- (NSMutableArray *)shuffleDeck:(NSArray *)resultsArray {

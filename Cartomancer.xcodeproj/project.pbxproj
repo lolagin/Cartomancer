@@ -10,7 +10,6 @@
 		6D1C2DA41AD482500086D147 /* tarot.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2DA31AD482500086D147 /* tarot.png */; };
 		6D1C2DA61AD483B40086D147 /* tarotside.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2DA51AD483B40086D147 /* tarotside.png */; };
 		6D1C2DAA1AD5B7B20086D147 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2DA91AD5B7B20086D147 /* default.realm */; };
-		6D1C2DAF1AD610FA0086D147 /* masterblaster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2DAE1AD610FA0086D147 /* masterblaster.jpg */; };
 		6D1C2F841AD641A20086D147 /* tarot0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F361AD641A20086D147 /* tarot0.jpg */; };
 		6D1C2F851AD641A20086D147 /* tarot1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F371AD641A20086D147 /* tarot1.jpg */; };
 		6D1C2F861AD641A20086D147 /* tarot10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F381AD641A20086D147 /* tarot10.jpg */; };
@@ -525,7 +524,6 @@
 				6D1C2FBD1AD641A20086D147 /* tarot60.jpg in Resources */,
 				6D1C2FAF1AD641A20086D147 /* tarot48.jpg in Resources */,
 				6D1C2F891AD641A20086D147 /* tarot13.jpg in Resources */,
-				6D1C2DAF1AD610FA0086D147 /* masterblaster.jpg in Resources */,
 				6D1C2DAA1AD5B7B20086D147 /* default.realm in Resources */,
 				6D1C2FC51AD641A20086D147 /* tarot68.jpg in Resources */,
 				6D1C2F851AD641A20086D147 /* tarot1.jpg in Resources */,
