@@ -37,7 +37,7 @@
     
     // ONLY LOAD THIS DATABASE FROM THE JSON FILE ONCE AND ONCE ONLY - done! - leave this commented out
     
-    [self extractPrediction];
+    [Prediction celticCross];
     
 
     // Override point for customization after application launch.
@@ -65,27 +65,5 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
-
-- (void)extractPrediction {
-    Prediction *prediction = [[Prediction alloc] init];
-    
-    NSArray *allCards = [prediction RLMResultsToNSArray:[Card allObjects]];
-    NSArray *randomizedPrediction = [prediction shuffleDeck:allCards];
-
-    NSArray *theBigTenCards = [prediction pickCelticCrossTen:randomizedPrediction];
-    
-    
-    NSLog(@"Mutable array : %@", theBigTenCards);
-    
-}
-//- (NSMutableArray *)shuffleDeck:(NSArray *)resultsArray {
-//    NSMutableArray *shuffledDeck = [resultsArray mutableCopy];
-//    for (int i = [shuffledDeck count] - 1; i > 0; i--) {
-//        [shuffledDeck exchangeObjectAtIndex:(arc4random() % ([shuffledDeck count] - 1)) withObjectAtIndex:i];
-//    }
-//    return shuffledDeck;
-//}
-
 
 @end
