@@ -80,7 +80,7 @@
     
     
     NSLog(@"Mutable array : %@", theBigTenCards);
-    return theBigTenCards;
+    return [theBigTenCards copy];
 }
 
 @end
