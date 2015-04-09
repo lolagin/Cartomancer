@@ -12,7 +12,8 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-- (NSMutableArray *)shuffleDeck:(NSArray *)resultsArray;
+//- (NSMutableArray *)shuffleDeck:(NSArray *)resultsArray;
+- (void)extractPrediction;
 
 @property (strong, nonatomic) UIWindow *window;
 

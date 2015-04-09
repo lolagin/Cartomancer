@@ -13,8 +13,12 @@
 @interface Prediction : NSObject
 
 - (NSArray *)RLMResultsToNSArray:(RLMResults *)results;
+
 - (NSMutableArray *)shuffleDeck:(NSArray *)resultsArray;
 
-@property (nonatomic, strong) NSArray *tenCards;
+- (NSArray *)pickCelticCrossTen:(NSMutableArray *)shuffledDeck;
+
+
+@property (nonatomic, strong) NSArray *testCards;
 
 @end

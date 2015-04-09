@@ -26,6 +26,20 @@
     return shuffledDeck;
 }
 
+- (NSArray *)pickCelticCrossTen:(NSMutableArray *)shuffledDeck {
+    // load the shuffled Deck (78 cards), strip to the first 10
+    
+    NSArray *celticCrossTen = [shuffledDeck subarrayWithRange:NSMakeRange(0, 9)];
+    // return these
+    return celticCrossTen;
+    
+}
 
+//- (NSString*)findInString:(NSString*)string
+//        replaceWithString:(NSString*)stringToReplaceWith
+//{
+//    return [input stringByReplacingOccurrencesOfString:string
+//                                            withString:stringToReplaceWith];
+//}
 
 @end

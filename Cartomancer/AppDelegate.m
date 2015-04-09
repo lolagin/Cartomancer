@@ -13,6 +13,7 @@
 #import "Prediction.h"
 #import "DataLoader.h"
 
+
 //#import "DataLoader.h"
 
 @interface AppDelegate ()
@@ -23,9 +24,6 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    
-    
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
     CardSpreadViewController *csvc = [[CardSpreadViewController alloc]init];
     UINavigationController *masterNavCon = [[UINavigationController alloc]initWithRootViewController:csvc];
@@ -34,24 +32,16 @@
     self.window.backgroundColor = [UIColor greenColor];
     [self.window makeKeyAndVisible];
     
+    RLMRealm *realm = [RLMRealm defaultRealm];
+    NSLog(@"%@", [realm path]);
     
-    // ONLY LOAD THIS DATABASE FROM THE JSON FILE ONCE AND ONCE ONLY
+    // ONLY LOAD THIS DATABASE FROM THE JSON FILE ONCE AND ONCE ONLY - done! - leave this commented out
     //DataLoader *test  = [[DataLoader alloc] init];
     //[test pullDataFromTextFile];
     //[test pullPredictionOutOfDeck];
     
-    RLMRealm *realm = [RLMRealm defaultRealm];
-    NSLog(@"%@", [realm path]);
-
-    //NSLog(@"these files were written to the Realm DB\n%@", [[Card allObjects] description]);
+    [self extractPrediction];
     
-    Prediction *prediction = [[Prediction alloc] init];
-    NSArray *allCards = [prediction RLMResultsToNSArray:[Card allObjects]];
-
-    //NSMutableArray *randomPrediction = [[NSMutableArray alloc] init];
-    
-    NSLog(@"Mutable array : %@", [prediction shuffleDeck:allCards]);
-
     // Override point for customization after application launch.
     return YES;
 }
@@ -78,13 +68,26 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-- (NSMutableArray *)shuffleDeck:(NSArray *)resultsArray {
-    NSMutableArray *shuffledDeck = [resultsArray mutableCopy];
-    for (int i = [shuffledDeck count] - 1; i > 0; i--) {
-        [shuffledDeck exchangeObjectAtIndex:(arc4random() % ([shuffledDeck count] - 1)) withObjectAtIndex:i];
-    }
-    return shuffledDeck;
+
+- (void)extractPrediction {
+    Prediction *prediction = [[Prediction alloc] init];
+    
+    NSArray *allCards = [prediction RLMResultsToNSArray:[Card allObjects]];
+    NSArray *randomizedPrediction = [prediction shuffleDeck:allCards];
+
+    NSArray *theTenMostImportantCardsRightNow = [randomizedPrediction ]
+    
+    
+    NSLog(@"Mutable array : %@", randomizedPrediction);
+    
 }
+//- (NSMutableArray *)shuffleDeck:(NSArray *)resultsArray {
+//    NSMutableArray *shuffledDeck = [resultsArray mutableCopy];
+//    for (int i = [shuffledDeck count] - 1; i > 0; i--) {
+//        [shuffledDeck exchangeObjectAtIndex:(arc4random() % ([shuffledDeck count] - 1)) withObjectAtIndex:i];
+//    }
+//    return shuffledDeck;
+//}
 
 
 @end
