@@ -22,6 +22,9 @@
 
 @implementation Prediction
 
+
+
+
 - (NSArray *)RLMResultsToNSArray:(RLMResults *)results {
     NSMutableArray *array = [NSMutableArray arrayWithCapacity:results.count];
     for (RLMObject *object in results) {
@@ -41,7 +44,7 @@
 - (NSArray *)pickCelticCrossTen:(NSMutableArray *)shuffledDeck {
     // load the shuffled Deck (78 cards), strip to the first 10
     
-    NSMutableArray *celticCrossTen = [shuffledDeck subarrayWithRange:NSMakeRange(0, 10)];
+    NSMutableArray *celticCrossTen = [[shuffledDeck subarrayWithRange:NSMakeRange(0, 10)]copy];
     // return these
     return celticCrossTen;
     
