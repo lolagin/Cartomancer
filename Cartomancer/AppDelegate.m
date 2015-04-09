@@ -25,11 +25,6 @@
 //    self.window.backgroundColor = [UIColor greenColor];
     [self.window makeKeyAndVisible];
     
-//    RLMRealm *realm = [RLMRealm defaultRealm];
-//    NSLog(@"%@", [realm path]);
-    
-    // ONLY LOAD THIS DATABASE FROM THE JSON FILE ONCE AND ONCE ONLY - done! - leave this commented out
-    
 
     // Override point for customization after application launch.
     return YES;

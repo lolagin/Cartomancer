@@ -7,6 +7,7 @@
 //
 
 #import "DefListTableViewController.h"
+#import "Card.h"
 
 @interface DefListTableViewController ()
 @property (strong, nonatomic)NSArray *cardBank;
@@ -53,7 +54,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell" forIndexPath:indexPath];
     
-    cell.textLabel.text = self.cardBank[indexPath.row];
+    cell.textLabel.text = ((Card *)self.cardBank[indexPath.row]).upDescription;
     
     return cell;
 }
