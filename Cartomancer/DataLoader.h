@@ -16,7 +16,7 @@
 
 - (void) pullDataFromTextFile;
 - (NSArray *)arrayFromText;
-- (void)pullPredictionOutOfDeck;
+
 
 - (NSArray *)RLMResultsToNSArray:(RLMResults *)results;
 

@@ -73,14 +73,5 @@
 }
 
 
-- (void)pullPredictionOutOfDeck {
-    //fix this
-    //SharedDeck *originalDeck = [Card allObjects];
-    
-    //SharedDeck *shuffledDeck = [[SharedDeck alloc]init];
-    
-    //shuffledDeck = [originalDeck shuffle];
-    //NSLog(@"%@", shuffledDeck);
-}
 
 @end
