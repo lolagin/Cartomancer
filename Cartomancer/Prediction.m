@@ -22,6 +22,21 @@
 
 @implementation Prediction
 
+// Suggestions for a more generalised version:
+//
+// • set up a kConstants pair of files 
+//
+//
+
+- (instancetype)initWithRealm {
+    self = [super init];
+    if (self) {
+        RLMRealm *realm = [RLMRealm defaultRealm];
+    }
+    return self;
+}
+
+
 - (NSArray *)RLMResultsToNSArray:(RLMResults *)results {
     NSMutableArray *array = [NSMutableArray arrayWithCapacity:results.count];
     for (RLMObject *object in results) {

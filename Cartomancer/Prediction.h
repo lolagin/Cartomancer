@@ -14,7 +14,7 @@
 
 + (NSArray *)celticCross;
 
-
+- (instancetype)initWithRealm:(RLMRealm *)realm;
 
 
 @property (nonatomic, strong) NSArray *testCards;
