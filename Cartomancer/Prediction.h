@@ -14,9 +14,6 @@
 
 + (NSArray *)celticCross;
 
-
-
-
 @property (nonatomic, strong) NSArray *testCards;
 
 @end

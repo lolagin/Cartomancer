@@ -8,9 +8,12 @@
 
 #import "Prediction.h"
 
-@interface Prediction () {
-    
-}
+
+@interface Prediction ()
+@property (strong, nonatomic)RLMRealm *realm;
+
+
+
 - (NSArray *)RLMResultsToNSArray:(RLMResults *)results;
 
 - (NSMutableArray *)shuffleDeck:(NSArray *)resultsArray;
@@ -18,9 +21,26 @@
 - (NSArray *)pickCelticCrossTen:(NSMutableArray *)shuffledDeck;
 
 
+
 @end
 
 @implementation Prediction
+
+
+// Suggestions for a more generalised version:
+//
+// • set up a kConstants pair of files 
+//
+//
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.realm = [RLMRealm defaultRealm];
+    }
+    return self;
+}
+
 
 
 
