@@ -9,11 +9,6 @@
 /* Begin PBXBuildFile section */
 		6D1C2DA41AD482500086D147 /* tarot.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2DA31AD482500086D147 /* tarot.png */; };
 		6D1C2DA61AD483B40086D147 /* tarotside.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2DA51AD483B40086D147 /* tarotside.png */; };
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 		6D1C2DAA1AD5B7B20086D147 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2DA91AD5B7B20086D147 /* default.realm */; };
 		6D1C2DAF1AD610FA0086D147 /* masterblaster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2DAE1AD610FA0086D147 /* masterblaster.jpg */; };
 		6D1C2F841AD641A20086D147 /* tarot0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F361AD641A20086D147 /* tarot0.jpg */; };
@@ -96,16 +91,6 @@
 		6D1C2FD11AD641A20086D147 /* tarot9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F831AD641A20086D147 /* tarot9.jpg */; };
 		6D1C2FD51AD648390086D147 /* DefListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1C2FD31AD648390086D147 /* DefListTableViewController.m */; };
 		6D1C2FD61AD648390086D147 /* DefListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2FD41AD648390086D147 /* DefListTableViewController.xib */; };
-=======
->>>>>>> ae58dc1b444bdd4e1a1dacb59829980876867b40
-=======
->>>>>>> ae58dc1b444bdd4e1a1dacb59829980876867b40
-=======
->>>>>>> ae58dc1b444bdd4e1a1dacb59829980876867b40
-=======
->>>>>>> ae58dc1b444bdd4e1a1dacb59829980876867b40
-=======
->>>>>>> ae58dc1b444bdd4e1a1dacb59829980876867b40
 		6D4262E61AD45EEF00F1310B /* curtains.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D4262E51AD45EEF00F1310B /* curtains.png */; };
 		6D4262EA1AD4624E00F1310B /* CardSpreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4262E81AD4624E00F1310B /* CardSpreadViewController.m */; };
 		6D4262EB1AD4624E00F1310B /* CardSpreadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D4262E91AD4624E00F1310B /* CardSpreadViewController.xib */; };
@@ -117,9 +102,6 @@
 		7722131E1AD36C7F00A7722C /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7722131D1AD36C7F00A7722C /* Realm.framework */; };
 		772213201AD36C9500A7722C /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7722131F1AD36C9500A7722C /* libc++.dylib */; };
 		772213231AD36CAE00A7722C /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 772213221AD36CAE00A7722C /* Card.m */; };
-		77378B301AD5DB0800C7AC27 /* seventyEightCardListings4.json in Resources */ = {isa = PBXBuildFile; fileRef = 77378B2F1AD5DB0800C7AC27 /* seventyEightCardListings4.json */; };
-		7784766A1AD611C8006FB87E /* Prediction.m in Sources */ = {isa = PBXBuildFile; fileRef = 778476691AD611C8006FB87E /* Prediction.m */; };
-		779FDBF51AD5C0C200C8F6D0 /* DataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 779FDBF41AD5C0C200C8F6D0 /* DataLoader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,11 +117,6 @@
 /* Begin PBXFileReference section */
 		6D1C2DA31AD482500086D147 /* tarot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tarot.png; sourceTree = "<group>"; };
 		6D1C2DA51AD483B40086D147 /* tarotside.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tarotside.png; sourceTree = "<group>"; };
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 		6D1C2DA91AD5B7B20086D147 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; name = default.realm; path = ../default.realm; sourceTree = "<group>"; };
 		6D1C2DAE1AD610FA0086D147 /* masterblaster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = masterblaster.jpg; path = ../../../../../Downloads/masterblaster.jpg; sourceTree = "<group>"; };
 		6D1C2F361AD641A20086D147 /* tarot0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot0.jpg; sourceTree = "<group>"; };
@@ -223,21 +200,6 @@
 		6D1C2FD21AD648390086D147 /* DefListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DefListTableViewController.h; path = ../DefListTableViewController.h; sourceTree = "<group>"; };
 		6D1C2FD31AD648390086D147 /* DefListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DefListTableViewController.m; path = ../DefListTableViewController.m; sourceTree = "<group>"; };
 		6D1C2FD41AD648390086D147 /* DefListTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DefListTableViewController.xib; path = ../DefListTableViewController.xib; sourceTree = "<group>"; };
-=======
-		6D1C2DA71AD4AEB80086D147 /* felt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = felt.png; sourceTree = "<group>"; };
->>>>>>> ae58dc1b444bdd4e1a1dacb59829980876867b40
-=======
-		6D1C2DA71AD4AEB80086D147 /* felt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = felt.png; sourceTree = "<group>"; };
->>>>>>> ae58dc1b444bdd4e1a1dacb59829980876867b40
-=======
-		6D1C2DA71AD4AEB80086D147 /* felt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = felt.png; sourceTree = "<group>"; };
->>>>>>> ae58dc1b444bdd4e1a1dacb59829980876867b40
-=======
-		6D1C2DA71AD4AEB80086D147 /* felt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = felt.png; sourceTree = "<group>"; };
->>>>>>> ae58dc1b444bdd4e1a1dacb59829980876867b40
-=======
-		6D1C2DA71AD4AEB80086D147 /* felt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = felt.png; sourceTree = "<group>"; };
->>>>>>> ae58dc1b444bdd4e1a1dacb59829980876867b40
 		6D4262E51AD45EEF00F1310B /* curtains.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = curtains.png; sourceTree = "<group>"; };
 		6D4262E71AD4624E00F1310B /* CardSpreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardSpreadViewController.h; sourceTree = "<group>"; };
 		6D4262E81AD4624E00F1310B /* CardSpreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardSpreadViewController.m; sourceTree = "<group>"; };
@@ -256,11 +218,6 @@
 		7722131F1AD36C9500A7722C /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		772213211AD36CAE00A7722C /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
 		772213221AD36CAE00A7722C /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
-		77378B2F1AD5DB0800C7AC27 /* seventyEightCardListings4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = seventyEightCardListings4.json; sourceTree = "<group>"; };
-		778476681AD611C8006FB87E /* Prediction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prediction.h; path = ../Prediction.h; sourceTree = "<group>"; };
-		778476691AD611C8006FB87E /* Prediction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Prediction.m; path = ../Prediction.m; sourceTree = "<group>"; };
-		779FDBF31AD5C0C200C8F6D0 /* DataLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataLoader.h; sourceTree = "<group>"; };
-		779FDBF41AD5C0C200C8F6D0 /* DataLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataLoader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -390,13 +347,6 @@
 		772212F61AD36BB200A7722C /* Cartomancer */ = {
 			isa = PBXGroup;
 			children = (
-				77378B2F1AD5DB0800C7AC27 /* seventyEightCardListings4.json */,
-				778476681AD611C8006FB87E /* Prediction.h */,
-				778476691AD611C8006FB87E /* Prediction.m */,
-				772213211AD36CAE00A7722C /* Card.h */,
-				772213221AD36CAE00A7722C /* Card.m */,
-				779FDBF31AD5C0C200C8F6D0 /* DataLoader.h */,
-				779FDBF41AD5C0C200C8F6D0 /* DataLoader.m */,
 				772212FB1AD36BB200A7722C /* AppDelegate.h */,
 				772212FC1AD36BB200A7722C /* AppDelegate.m */,
 				6D4262E71AD4624E00F1310B /* CardSpreadViewController.h */,
@@ -413,6 +363,8 @@
 				6D1C2DAE1AD610FA0086D147 /* masterblaster.jpg */,
 				6D1C2DA51AD483B40086D147 /* tarotside.png */,
 				6D4262E51AD45EEF00F1310B /* curtains.png */,
+				772213211AD36CAE00A7722C /* Card.h */,
+				772213221AD36CAE00A7722C /* Card.m */,
 			);
 			path = Cartomancer;
 			sourceTree = "<group>";
@@ -422,6 +374,7 @@
 			children = (
 				772212F81AD36BB200A7722C /* Info.plist */,
 				772212F91AD36BB200A7722C /* main.m */,
+				6D1C2DA91AD5B7B20086D147 /* default.realm */,
 				7722131F1AD36C9500A7722C /* libc++.dylib */,
 				6D1C2F351AD641A20086D147 /* JPEGS 20 percent */,
 			);
@@ -538,11 +491,6 @@
 				6D1C2F881AD641A20086D147 /* tarot12.jpg in Resources */,
 				6D1C2F921AD641A20086D147 /* tarot21.jpg in Resources */,
 				6D4262E61AD45EEF00F1310B /* curtains.png in Resources */,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 				6D1C2F941AD641A20086D147 /* tarot23.jpg in Resources */,
 				6D1C2F8E1AD641A20086D147 /* tarot18.jpg in Resources */,
 				6D1C2FA51AD641A20086D147 /* tarot39.jpg in Resources */,
@@ -577,16 +525,6 @@
 				6D1C2FC51AD641A20086D147 /* tarot68.jpg in Resources */,
 				6D1C2F851AD641A20086D147 /* tarot1.jpg in Resources */,
 				6D1C2FB61AD641A20086D147 /* tarot54.jpg in Resources */,
-=======
->>>>>>> ae58dc1b444bdd4e1a1dacb59829980876867b40
-=======
->>>>>>> ae58dc1b444bdd4e1a1dacb59829980876867b40
-=======
->>>>>>> ae58dc1b444bdd4e1a1dacb59829980876867b40
-=======
->>>>>>> ae58dc1b444bdd4e1a1dacb59829980876867b40
-=======
->>>>>>> ae58dc1b444bdd4e1a1dacb59829980876867b40
 				6D1C2DA41AD482500086D147 /* tarot.png in Resources */,
 				6D1C2F8B1AD641A20086D147 /* tarot15.jpg in Resources */,
 				6D1C2FB51AD641A20086D147 /* tarot53.jpg in Resources */,
@@ -607,11 +545,6 @@
 				6D1C2F931AD641A20086D147 /* tarot22.jpg in Resources */,
 				6D1C2FA91AD641A20086D147 /* tarot42.jpg in Resources */,
 				6D4262EB1AD4624E00F1310B /* CardSpreadViewController.xib in Resources */,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 				6D1C2F911AD641A20086D147 /* tarot20.jpg in Resources */,
 				6D1C2FAD1AD641A20086D147 /* tarot46.jpg in Resources */,
 				6D1C2FA21AD641A20086D147 /* tarot36.jpg in Resources */,
@@ -623,21 +556,6 @@
 				6D1C2FC41AD641A20086D147 /* tarot67.jpg in Resources */,
 				6D1C2F9A1AD641A20086D147 /* tarot29.jpg in Resources */,
 				6D1C2FB21AD641A20086D147 /* tarot50.jpg in Resources */,
-=======
-				77378B301AD5DB0800C7AC27 /* seventyEightCardListings4.json in Resources */,
->>>>>>> ae58dc1b444bdd4e1a1dacb59829980876867b40
-=======
-				77378B301AD5DB0800C7AC27 /* seventyEightCardListings4.json in Resources */,
->>>>>>> ae58dc1b444bdd4e1a1dacb59829980876867b40
-=======
-				77378B301AD5DB0800C7AC27 /* seventyEightCardListings4.json in Resources */,
->>>>>>> ae58dc1b444bdd4e1a1dacb59829980876867b40
-=======
-				77378B301AD5DB0800C7AC27 /* seventyEightCardListings4.json in Resources */,
->>>>>>> ae58dc1b444bdd4e1a1dacb59829980876867b40
-=======
-				77378B301AD5DB0800C7AC27 /* seventyEightCardListings4.json in Resources */,
->>>>>>> ae58dc1b444bdd4e1a1dacb59829980876867b40
 				772213051AD36BB200A7722C /* Images.xcassets in Resources */,
 				6D1C2F871AD641A20086D147 /* tarot11.jpg in Resources */,
 				6D1C2F8D1AD641A20086D147 /* tarot17.jpg in Resources */,
@@ -669,8 +587,6 @@
 				772212FA1AD36BB200A7722C /* main.m in Sources */,
 				6D1C2FD51AD648390086D147 /* DefListTableViewController.m in Sources */,
 				772213231AD36CAE00A7722C /* Card.m in Sources */,
-				7784766A1AD611C8006FB87E /* Prediction.m in Sources */,
-				779FDBF51AD5C0C200C8F6D0 /* DataLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
