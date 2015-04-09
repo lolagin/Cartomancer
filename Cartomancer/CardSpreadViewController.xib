@@ -8,17 +8,17 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardSpreadViewController">
             <connections>
-                <outlet property="sigTarot" destination="XS7-xD-9Fn" id="LJ5-gO-sON"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
-                <outletCollection property="imageViews" destination="wiY-Kh-drd" id="9Dz-aM-SaB"/>
-                <outletCollection property="imageViews" destination="qkp-ap-94t" id="VY2-kr-4JS"/>
-                <outletCollection property="imageViews" destination="tPw-Sc-lgy" id="vcZ-SY-Ogy"/>
-                <outletCollection property="imageViews" destination="gAc-R6-z21" id="m0U-CB-vdP"/>
-                <outletCollection property="imageViews" destination="D7Q-nO-TYl" id="zh4-y5-Jb4"/>
-                <outletCollection property="imageViews" destination="lZK-gb-PSo" id="GlW-D6-CWh"/>
-                <outletCollection property="imageViews" destination="s5J-9k-dWI" id="KlY-fh-vIf"/>
-                <outletCollection property="imageViews" destination="fFr-Ta-Qh0" id="cGz-99-veZ"/>
-                <outletCollection property="imageViews" destination="hne-VE-uTS" id="QYE-kx-hDr"/>
+                <outletCollection property="imageViews" destination="s5J-9k-dWI" id="twz-bN-3NE"/>
+                <outletCollection property="imageViews" destination="XS7-xD-9Fn" id="8HQ-Tm-RBb"/>
+                <outletCollection property="imageViews" destination="fFr-Ta-Qh0" id="094-Lf-DJP"/>
+                <outletCollection property="imageViews" destination="hne-VE-uTS" id="dDD-EB-Fzo"/>
+                <outletCollection property="imageViews" destination="lZK-gb-PSo" id="X9m-Q6-Te4"/>
+                <outletCollection property="imageViews" destination="D7Q-nO-TYl" id="wNa-S2-2JL"/>
+                <outletCollection property="imageViews" destination="gAc-R6-z21" id="MUZ-jG-UaT"/>
+                <outletCollection property="imageViews" destination="tPw-Sc-lgy" id="G1m-aG-5a5"/>
+                <outletCollection property="imageViews" destination="qkp-ap-94t" id="Ebz-nl-BQX"/>
+                <outletCollection property="imageViews" destination="wiY-Kh-drd" id="0ou-Pp-wSf"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
