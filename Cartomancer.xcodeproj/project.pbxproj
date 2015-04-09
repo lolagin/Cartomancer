@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6D1C2DA41AD482500086D147 /* tarot.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2DA31AD482500086D147 /* tarot.png */; };
-		6D1C2DA61AD483B40086D147 /* tarotside.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2DA51AD483B40086D147 /* tarotside.png */; };
 		6D1C2DAA1AD5B7B20086D147 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2DA91AD5B7B20086D147 /* default.realm */; };
 		6D1C2F841AD641A20086D147 /* tarot0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F361AD641A20086D147 /* tarot0.jpg */; };
 		6D1C2F851AD641A20086D147 /* tarot1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F371AD641A20086D147 /* tarot1.jpg */; };
@@ -116,7 +115,6 @@
 
 /* Begin PBXFileReference section */
 		6D1C2DA31AD482500086D147 /* tarot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tarot.png; sourceTree = "<group>"; };
-		6D1C2DA51AD483B40086D147 /* tarotside.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tarotside.png; sourceTree = "<group>"; };
 		6D1C2DA91AD5B7B20086D147 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; name = default.realm; path = ../default.realm; sourceTree = "<group>"; };
 		6D1C2DAE1AD610FA0086D147 /* masterblaster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = masterblaster.jpg; path = ../../../../../Downloads/masterblaster.jpg; sourceTree = "<group>"; };
 		6D1C2F361AD641A20086D147 /* tarot0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot0.jpg; sourceTree = "<group>"; };
@@ -349,8 +347,6 @@
 		772212F61AD36BB200A7722C /* Cartomancer */ = {
 			isa = PBXGroup;
 			children = (
-				772E4BE71AD6FEF5006CAE1F /* Prediction.h */,
-				772E4BE81AD6FEF5006CAE1F /* Prediction.m */,
 				772212FB1AD36BB200A7722C /* AppDelegate.h */,
 				772212FC1AD36BB200A7722C /* AppDelegate.m */,
 				6D4262E71AD4624E00F1310B /* CardSpreadViewController.h */,
@@ -359,16 +355,17 @@
 				6D1C2FD21AD648390086D147 /* DefListTableViewController.h */,
 				6D1C2FD31AD648390086D147 /* DefListTableViewController.m */,
 				6D1C2FD41AD648390086D147 /* DefListTableViewController.xib */,
+				772213211AD36CAE00A7722C /* Card.h */,
+				772213221AD36CAE00A7722C /* Card.m */,
+				772E4BE71AD6FEF5006CAE1F /* Prediction.h */,
+				772E4BE81AD6FEF5006CAE1F /* Prediction.m */,
 				772213041AD36BB200A7722C /* Images.xcassets */,
 				772213061AD36BB200A7722C /* LaunchScreen.xib */,
 				7722131D1AD36C7F00A7722C /* Realm.framework */,
 				772212F71AD36BB200A7722C /* Supporting Files */,
 				6D1C2DA31AD482500086D147 /* tarot.png */,
 				6D1C2DAE1AD610FA0086D147 /* masterblaster.jpg */,
-				6D1C2DA51AD483B40086D147 /* tarotside.png */,
 				6D4262E51AD45EEF00F1310B /* curtains.png */,
-				772213211AD36CAE00A7722C /* Card.h */,
-				772213221AD36CAE00A7722C /* Card.m */,
 			);
 			path = Cartomancer;
 			sourceTree = "<group>";
@@ -566,7 +563,6 @@
 				6D1C2FA81AD641A20086D147 /* tarot41.jpg in Resources */,
 				6D1C2FB11AD641A20086D147 /* tarot5.jpg in Resources */,
 				6D1C2FBE1AD641A20086D147 /* tarot61.jpg in Resources */,
-				6D1C2DA61AD483B40086D147 /* tarotside.png in Resources */,
 				6D1C2FCA1AD641A20086D147 /* tarot72.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

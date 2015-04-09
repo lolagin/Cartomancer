@@ -38,7 +38,7 @@
                                 <constraint firstAttribute="width" secondItem="s5J-9k-dWI" secondAttribute="height" multiplier="4:7" id="RcE-Z9-yGl"/>
                             </constraints>
                         </imageView>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tarotside.png" translatesAutoresizingMaskIntoConstraints="NO" id="XS7-xD-9Fn">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tarot.png" translatesAutoresizingMaskIntoConstraints="NO" id="XS7-xD-9Fn">
                             <rect key="frame" x="136" y="285" width="210" height="120"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="XS7-xD-9Fn" secondAttribute="height" multiplier="7:4" id="1lw-0O-wZQ"/>
@@ -164,6 +164,5 @@
     <resources>
         <image name="curtains.png" width="1600" height="1067"/>
         <image name="tarot.png" width="597" height="1197"/>
-        <image name="tarotside.png" width="1197" height="597"/>
     </resources>
 </document>

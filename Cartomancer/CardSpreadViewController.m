@@ -26,6 +26,11 @@
 @property (nonatomic, strong) NSArray *randomCards;
 //@property (nonatomic, strong) NSArray *cardDefs;
 @property (nonatomic, strong) UIButton *detailButton;
+
+@property (nonatomic, strong) UIPopoverController *poppy;
+
+
+
 @end
 
 @implementation CardSpreadViewController {
@@ -126,7 +131,7 @@
         return;
     }
     if (self.incrementer == 9) {
-        [self.detailButton removeFromSuperview];
+//        [self.detailButton removeFromSuperview];
     }
     [UIView animateWithDuration:0.9 animations:^{
         ((UIImageView *)self.imageViews[self.incrementer]).alpha = 0;
@@ -139,7 +144,7 @@
 #pragma mark Lazy Accessors
 -(NSArray *)randomCards{
     if (!_randomCards){
-
+        _randomCards = [NSArray array];
         _randomCards = [[Prediction celticCross] copy];
         
 //        NSMutableArray *secx = [NSMutableArray array];

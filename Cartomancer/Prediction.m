@@ -10,14 +10,12 @@
 
 
 @interface Prediction ()
-@property (strong, nonatomic)RLMRealm *realm;
+//@property (strong, nonatomic)RLMRealm *realm;
 
 
 
 - (NSArray *)RLMResultsToNSArray:(RLMResults *)results;
-
 - (NSMutableArray *)shuffleDeck:(NSArray *)resultsArray;
-
 - (NSArray *)pickCelticCrossTen:(NSMutableArray *)shuffledDeck;
 
 
@@ -32,24 +30,28 @@
 // • set up a kConstants pair of files 
 //
 //
-
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-        self.realm = [RLMRealm defaultRealm];
-    }
-    return self;
-}
+//
+//- (instancetype)init {
+//    self = [super init];
+//    if (self) {
+//        self.realm = [RLMRealm defaultRealm];
+//    }
+//    return self;
+//}
 
 
 
 
 
 - (NSArray *)RLMResultsToNSArray:(RLMResults *)results {
+   
+    
+    
     NSMutableArray *array = [NSMutableArray arrayWithCapacity:results.count];
     for (RLMObject *object in results) {
         [array addObject:object];
     }
+    
     return array;
 }
 
@@ -64,23 +66,20 @@
 - (NSArray *)pickCelticCrossTen:(NSMutableArray *)shuffledDeck {
     // load the shuffled Deck (78 cards), strip to the first 10
     
-    NSMutableArray *celticCrossTen = [[shuffledDeck subarrayWithRange:NSMakeRange(0, 10)]copy];
+    NSMutableArray *celticCrossTen = [shuffledDeck subarrayWithRange:NSMakeRange(0, 10)];
     // return these
-    return celticCrossTen;
+    return [celticCrossTen copy];
     
 }
 
 + (NSArray *)celticCross {
-    Prediction *prediction = [[Prediction alloc] init];
     
+    Prediction *prediction = [[Prediction alloc] init];
     NSArray *allCards = [prediction RLMResultsToNSArray:[Card allObjects]];
     NSArray *randomizedPrediction = [prediction shuffleDeck:allCards];
-    
     NSMutableArray *theBigTenCards = [prediction pickCelticCrossTen:randomizedPrediction];
-    
-    
     NSLog(@"Mutable array : %@", theBigTenCards);
-    return [theBigTenCards copy];
+    return theBigTenCards;
 }
 
 @end
