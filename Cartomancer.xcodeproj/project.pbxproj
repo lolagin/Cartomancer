@@ -12,6 +12,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		6D1C2DAA1AD5B7B20086D147 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2DA91AD5B7B20086D147 /* default.realm */; };
 		6D1C2DAF1AD610FA0086D147 /* masterblaster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2DAE1AD610FA0086D147 /* masterblaster.jpg */; };
 		6D1C2F841AD641A20086D147 /* tarot0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F361AD641A20086D147 /* tarot0.jpg */; };
@@ -100,6 +101,8 @@
 >>>>>>> ae58dc1b444bdd4e1a1dacb59829980876867b40
 =======
 >>>>>>> ae58dc1b444bdd4e1a1dacb59829980876867b40
+=======
+>>>>>>> ae58dc1b444bdd4e1a1dacb59829980876867b40
 		6D4262E61AD45EEF00F1310B /* curtains.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D4262E51AD45EEF00F1310B /* curtains.png */; };
 		6D4262EA1AD4624E00F1310B /* CardSpreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4262E81AD4624E00F1310B /* CardSpreadViewController.m */; };
 		6D4262EB1AD4624E00F1310B /* CardSpreadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D4262E91AD4624E00F1310B /* CardSpreadViewController.xib */; };
@@ -129,6 +132,7 @@
 /* Begin PBXFileReference section */
 		6D1C2DA31AD482500086D147 /* tarot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tarot.png; sourceTree = "<group>"; };
 		6D1C2DA51AD483B40086D147 /* tarotside.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tarotside.png; sourceTree = "<group>"; };
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -215,6 +219,9 @@
 		6D1C2FD21AD648390086D147 /* DefListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DefListTableViewController.h; path = ../DefListTableViewController.h; sourceTree = "<group>"; };
 		6D1C2FD31AD648390086D147 /* DefListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DefListTableViewController.m; path = ../DefListTableViewController.m; sourceTree = "<group>"; };
 		6D1C2FD41AD648390086D147 /* DefListTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DefListTableViewController.xib; path = ../DefListTableViewController.xib; sourceTree = "<group>"; };
+=======
+		6D1C2DA71AD4AEB80086D147 /* felt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = felt.png; sourceTree = "<group>"; };
+>>>>>>> ae58dc1b444bdd4e1a1dacb59829980876867b40
 =======
 		6D1C2DA71AD4AEB80086D147 /* felt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = felt.png; sourceTree = "<group>"; };
 >>>>>>> ae58dc1b444bdd4e1a1dacb59829980876867b40
@@ -527,6 +534,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				6D1C2F941AD641A20086D147 /* tarot23.jpg in Resources */,
 				6D1C2F8E1AD641A20086D147 /* tarot18.jpg in Resources */,
 				6D1C2FA51AD641A20086D147 /* tarot39.jpg in Resources */,
@@ -567,6 +575,8 @@
 >>>>>>> ae58dc1b444bdd4e1a1dacb59829980876867b40
 =======
 >>>>>>> ae58dc1b444bdd4e1a1dacb59829980876867b40
+=======
+>>>>>>> ae58dc1b444bdd4e1a1dacb59829980876867b40
 				6D1C2DA41AD482500086D147 /* tarot.png in Resources */,
 				6D1C2F8B1AD641A20086D147 /* tarot15.jpg in Resources */,
 				6D1C2FB51AD641A20086D147 /* tarot53.jpg in Resources */,
@@ -590,6 +600,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				6D1C2F911AD641A20086D147 /* tarot20.jpg in Resources */,
 				6D1C2FAD1AD641A20086D147 /* tarot46.jpg in Resources */,
 				6D1C2FA21AD641A20086D147 /* tarot36.jpg in Resources */,
@@ -601,6 +612,9 @@
 				6D1C2FC41AD641A20086D147 /* tarot67.jpg in Resources */,
 				6D1C2F9A1AD641A20086D147 /* tarot29.jpg in Resources */,
 				6D1C2FB21AD641A20086D147 /* tarot50.jpg in Resources */,
+=======
+				77378B301AD5DB0800C7AC27 /* seventyEightCardListings4.json in Resources */,
+>>>>>>> ae58dc1b444bdd4e1a1dacb59829980876867b40
 =======
 				77378B301AD5DB0800C7AC27 /* seventyEightCardListings4.json in Resources */,
 >>>>>>> ae58dc1b444bdd4e1a1dacb59829980876867b40
