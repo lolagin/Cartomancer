@@ -8,6 +8,12 @@
 
 #import "AppDelegate.h"
 #import "CardSpreadViewController.h"
+#import <Realm/Realm.h> 
+#import "Card.h"
+#import "Prediction.h"
+#import "DataLoader.h"
+
+//#import "DataLoader.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +26,7 @@
     
     
     
-        self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
+    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
     CardSpreadViewController *csvc = [[CardSpreadViewController alloc]init];
     UINavigationController *masterNavCon = [[UINavigationController alloc]initWithRootViewController:csvc];
     
@@ -28,6 +34,24 @@
     self.window.backgroundColor = [UIColor greenColor];
     [self.window makeKeyAndVisible];
     
+    
+    // ONLY LOAD THIS DATABASE FROM THE JSON FILE ONCE AND ONCE ONLY
+    //DataLoader *test  = [[DataLoader alloc] init];
+    //[test pullDataFromTextFile];
+    //[test pullPredictionOutOfDeck];
+    
+    RLMRealm *realm = [RLMRealm defaultRealm];
+    NSLog(@"%@", [realm path]);
+
+    //NSLog(@"these files were written to the Realm DB\n%@", [[Card allObjects] description]);
+    
+    Prediction *prediction = [[Prediction alloc] init];
+    NSArray *allCards = [prediction RLMResultsToNSArray:[Card allObjects]];
+
+    //NSMutableArray *randomPrediction = [[NSMutableArray alloc] init];
+    
+    NSLog(@"Mutable array : %@", [prediction shuffleDeck:allCards]);
+
     // Override point for customization after application launch.
     return YES;
 }
@@ -53,5 +77,14 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+- (NSMutableArray *)shuffleDeck:(NSArray *)resultsArray {
+    NSMutableArray *shuffledDeck = [resultsArray mutableCopy];
+    for (int i = [shuffledDeck count] - 1; i > 0; i--) {
+        [shuffledDeck exchangeObjectAtIndex:(arc4random() % ([shuffledDeck count] - 1)) withObjectAtIndex:i];
+    }
+    return shuffledDeck;
+}
+
 
 @end

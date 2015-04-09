@@ -8,16 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import <Realm/Realm.h>
-#import <UIKit/UIKit.h>
 
 @interface Card : RLMObject
 
+@property NSString *key;
 @property NSString *name;
 @property NSString *upDescription;
 @property NSString *reversedDescription;
 @property BOOL isUpright;
-@property UIImage *image;
+@property NSString *image;
 //@property NSString *suitArcana;
 
 @end
 RLM_ARRAY_TYPE(Card)  // defined the RLMArray (Card)
+
+

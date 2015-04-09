@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+//@class DataLoader;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+- (NSMutableArray *)shuffleDeck:(NSArray *)resultsArray;
 
 @property (strong, nonatomic) UIWindow *window;
 
