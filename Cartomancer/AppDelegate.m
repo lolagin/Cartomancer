@@ -10,7 +10,7 @@
 #import "CardSpreadViewController.h"
 #import <Realm/Realm.h> 
 #import "Card.h"
-#import "Prediction.h"
+//#import "Prediction.h"
 #import "DataLoader.h"
 
 //#import "DataLoader.h"
@@ -39,18 +39,15 @@
     //DataLoader *test  = [[DataLoader alloc] init];
     //[test pullDataFromTextFile];
     //[test pullPredictionOutOfDeck];
-    
-    RLMRealm *realm = [RLMRealm defaultRealm];
-    NSLog(@"%@", [realm path]);
-
+//    RLMRealm *realm = [RLMRealm defaultRealm];
+//    NSLog(@"%@", [realm path]);
     //NSLog(@"these files were written to the Realm DB\n%@", [[Card allObjects] description]);
-    
-    Prediction *prediction = [[Prediction alloc] init];
-    NSArray *allCards = [prediction RLMResultsToNSArray:[Card allObjects]];
+//    Prediction *prediction = [[Prediction alloc] init];
+//    NSArray *allCards = [prediction RLMResultsToNSArray:[Card allObjects]];
 
     //NSMutableArray *randomPrediction = [[NSMutableArray alloc] init];
     
-    NSLog(@"Mutable array : %@", [prediction shuffleDeck:allCards]);
+//    NSLog(@"Mutable array : %@", [prediction shuffleDeck:allCards]);
 
     // Override point for customization after application launch.
     return YES;

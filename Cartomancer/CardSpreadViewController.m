@@ -19,7 +19,7 @@
 @property (strong, nonatomic) UITapGestureRecognizer *tappy;
 @property (strong, nonatomic) UISwipeGestureRecognizer *forwardSwish;
 @property (strong, nonatomic) UISwipeGestureRecognizer *backSwish;
-@property (strong, nonatomic) UILabel *TarotLore;
+@property (strong, nonatomic) UILabel *tarotLore;
 @property (nonatomic, assign) NSUInteger i;
 @property (nonatomic, assign) CGRect smallerFrame;
 @property (nonatomic, strong) NSArray *randomImages;
@@ -35,26 +35,8 @@
 
 
 
-
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    CGRect aFrame = CGRectMake((self.view.frame.size.width / 10), (self.view.frame.size.height / 3), (self.view.frame.size.width * 0.9), (self.view.frame.size.height / 3));
-
-    self.TarotLore = [[UILabel alloc]initWithFrame:aFrame];
-    self.TarotLore.alpha = 0.0;
-    self.TarotLore.backgroundColor = [UIColor blackColor];
-    self.TarotLore.textAlignment = NSTextAlignmentCenter;
-    self.TarotLore.layer.borderWidth = 5;
-    self.TarotLore.layer.borderColor = [UIColor whiteColor].CGColor;
-    self.TarotLore.textColor = [UIColor whiteColor];
-    self.TarotLore.numberOfLines = 10;
-    
-    self.detailButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [self.detailButton setBackgroundColor:[UIColor greenColor]];
-    self.detailButton.frame = CGRectMake((self.view.frame.size.width * 0.8), (self.view.frame.size.height * 0.8), (self.view.frame.size.width * 0.1), (self.view.frame.size.height * 0.1));
-    self.detailButton.titleLabel.text = @"Summary";
-    [self.detailButton addTarget:self action:@selector(buttonAction) forControlEvents:UIControlEventTouchUpInside];
-    
     
     self.tappy = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapHappens)];
     self.forwardSwish = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(dealForward)];
@@ -67,7 +49,7 @@
     [self.view addGestureRecognizer:self.tappy];
     [self.view addGestureRecognizer:self.forwardSwish];
     [self.view addGestureRecognizer:self.backSwish];
-    [self.view addSubview:self.TarotLore];
+    [self.view addSubview:self.tarotLore];
     [self.imageViews enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         ((UIImageView *)obj).alpha = 0;
     }];
@@ -91,6 +73,10 @@
 }
 */
 
+
+#pragma mark -
+#pragma mark Actions
+
 -(void)tapHappens {
     [self dealForward];
 }
@@ -101,14 +87,14 @@
         return;
     }
     [UIView animateWithDuration:1.4 animations:^{
-        self.TarotLore.alpha = 0;
+        self.tarotLore.alpha = 0;
     }];
-    self.TarotLore.text = ((NSString *)self.cardDefs[self.i]);
+    self.tarotLore.text = ((NSString *)self.cardDefs[self.i]);
     [UIView animateWithDuration:1.4 animations:^{
         ((UIImageView *)self.imageViews[self.i]).alpha = 1;
     }];
     [UIView animateWithDuration:2.1 animations:^{
-        self.TarotLore.alpha = 0.7;
+        self.tarotLore.alpha = 0.7;
         ((UIImageView *)self.imageViews[self.i]).image = self.randomImages[self.i];
     }];
     
@@ -148,8 +134,8 @@
 }
 
 
-
-
+#pragma mark -
+#pragma mark Lazy Accessors
 -(NSArray *)randomImages{
     if (!_randomImages){
         NSMutableArray *secx = [NSMutableArray array];
@@ -179,6 +165,34 @@
     }
     return _i;
 }
+
+-(UILabel *)tarotLore {
+    if (!_tarotLore){
+        CGRect aFrame = CGRectMake((self.view.frame.size.width / 10), (self.view.frame.size.height / 3), (self.view.frame.size.width * 0.9), (self.view.frame.size.height / 3));
+        self.tarotLore = [[UILabel alloc]initWithFrame:aFrame];
+        self.tarotLore.alpha = 0.0;
+        self.tarotLore.backgroundColor = [UIColor blackColor];
+        self.tarotLore.textAlignment = NSTextAlignmentCenter;
+        self.tarotLore.layer.borderWidth = 5;
+        self.tarotLore.layer.borderColor = [UIColor whiteColor].CGColor;
+        self.tarotLore.textColor = [UIColor whiteColor];
+        self.tarotLore.numberOfLines = 10;
+    }
+    return _tarotLore;
+}
+
+
+-(UIButton *)detailButton {
+    if (!_detailButton){
+        self.detailButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        [self.detailButton setBackgroundColor:[UIColor greenColor]];
+        self.detailButton.frame = CGRectMake((self.view.frame.size.width * 0.8), (self.view.frame.size.height * 0.8), (self.view.frame.size.width * 0.1), (self.view.frame.size.height * 0.1));
+        self.detailButton.titleLabel.text = @"Summary";
+        [self.detailButton addTarget:self action:@selector(buttonAction) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _detailButton;
+}
+
 
 -(NSArray *)cardDefs{
     if (!_cardDefs){
