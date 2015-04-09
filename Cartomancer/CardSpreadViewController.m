@@ -138,6 +138,9 @@
 #pragma mark Lazy Accessors
 -(NSArray *)randomImages{
     if (!_randomImages){
+
+        
+        
         NSMutableArray *secx = [NSMutableArray array];
         for (int inc = 0; inc < 10;inc++) {
             int lul = arc4random_uniform(78);
