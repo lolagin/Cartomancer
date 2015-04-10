@@ -82,4 +82,28 @@
     return theBigTenCards;
 }
 
+
+
+/*
+ Batch rename the Marseilles cards
+ Refresh cards - enumerateBlockToRefreshIBCollectionOutlet
+ IntroVC - AppDelegate loads IntroVC instead
+ Change decks
+ Button to switch decks
+ IBM Watson
+ 
+ NSMakeRange(78,67)
+ first
+ animated sizetofit summary
+ 
+ 
+ 
+ 1-10 
+ 
+ 1 7810
+ 
+ King of Pentacles - cards[index] <--- initWithPositionKey
+ 
+ 
+ */
 @end

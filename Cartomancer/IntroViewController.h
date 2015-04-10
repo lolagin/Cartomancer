@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface IntroViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIImageView *introImageView;
 
 @end
