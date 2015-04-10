@@ -18,13 +18,14 @@
 +(instancetype)preLoadedView:(NSArray *)reading{
    DefListTableViewController *tabbie = [[DefListTableViewController alloc]init];
     tabbie.cardBank = [NSArray arrayWithArray:reading];
+    
     return tabbie;
     
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
-    
+    self.tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"curtains"]];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -53,7 +54,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell" forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor clearColor];
+    cell.backgroundColor = [UIColor grayColor];
+    cell.backgroundView.alpha = 0.3;
     cell.textLabel.text = ((Card *)self.cardBank[indexPath.row]).upDescription;
     
     return cell;

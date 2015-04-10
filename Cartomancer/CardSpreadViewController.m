@@ -41,7 +41,7 @@
 @property (nonatomic, strong) UIPopoverController *poppy;
 
 
-
+-(void)fades;
 @end
 
 @implementation CardSpreadViewController {
@@ -68,7 +68,7 @@
     [self.view addGestureRecognizer:self.backSwish];
     
     
-    [self.view addSubview:self.deckChangeButton];
+//    [self.view addSubview:self.deckChangeButton];
     [self.imageViews enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         ((UIImageView *)obj).alpha = 0;
     }];
@@ -119,8 +119,31 @@
     [self.imageViews enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         ((UIImageView *)obj).image = [UIImage imageNamed:[NSString stringWithFormat:@"%@%@", self.tarotImagePrefix, ((Card *)self.randomCards[idx]).image]];
     }];
-            self.bigCardImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@%@",self.tarotImagePrefix, ((Card *)self.randomCards[self.incrementer]).image]];
-}
+    
+    [self.randomCards enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        if (((Card *)obj).isUpright) {
+            UIImage *flippedImage = [[UIImage alloc] initWithCGImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@%@",self.tarotImagePrefix,((Card *)obj).image]].CGImage scale:1.0 orientation:UIImageOrientationDown];
+            ((UIImageView  *)self.imageViews[idx]).image = flippedImage;
+        }
+        if (!(idx == 1)) {
+            return;
+        }
+        else {
+            UIImage *PortraitImage = [[UIImage alloc] initWithCGImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@%@",self.tarotImagePrefix,((Card *)self.randomCards[idx]).image]].CGImage scale:1.0 orientation:UIImageOrientationLeft];
+            ((UIImageView *)self.imageViews[idx]).image = PortraitImage;
+        }
+    }];
+    
+    
+    self.bigCardImage.image = ((UIImageView *)self.imageViews[self.incrementer]).image;
+
+//    if (((Card *)self.randomCards[self.incrementer]).isUpright){
+//        UIImage *flippedImage = [[UIImage alloc] initWithCGImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@%@",self.tarotImagePrefix,((Card *)self.randomCards[self.incrementer]).image]].CGImage scale:1.0 orientation:UIImageOrientationDown];
+//        ((UIImageView *)self.imageViews[self.incrementer]).image = flippedImage;
+//        self.bigCardImage.image = flippedImage;
+    
+    }
+
 
 
 
@@ -130,41 +153,50 @@
     [self dealForward];
 }
 
--(void)dealForward {
-    if (self.incrementer >= 10) {
-//        self.view add subview/elementwhatever ,a button that pushes modal tableview controller
-        return;
-    }
-    [UIView animateWithDuration:1.4 animations:^{
-        self.tarotLore.alpha = 0;
-                self.bigCardImage.alpha = 0;
-    }];
+
+-(void)fades{
+[UIView animateWithDuration:1.3 animations:^{
+    self.tarotLore.alpha = 0;
+    self.positionLabel.alpha = 0;
+    self.bigCardImage.alpha = 0;
+} completion:^(BOOL finished) {
+    [self refreshImageViews];
     self.tarotLore.text = ((Card *)self.randomCards[self.incrementer]).upDescription;
-    [UIView animateWithDuration:1.4 animations:^{
-        ((UIImageView *)self.imageViews[self.incrementer]).alpha = 1;
-    }];
-    [UIView animateWithDuration:2.1 animations:^{
-        self.tarotLore.alpha = 0.7;
-        ((UIImageView *)self.imageViews[self.incrementer]).image = [UIImage imageNamed:[NSString stringWithFormat:@"RW%@",((Card *)self.randomCards[self.incrementer]).image]];
+    self.positionLabel.text = self.positionStringsArray[self.incrementer];
+}];
+    
+
+    
+  //    ((UIImageView *)self.imageViews[self.incrementer]).image = [UIImage imageNamed:[NSString stringWithFormat:@"%@%@",self.tarotImagePrefix,((Card *)self.randomCards[self.incrementer]).image]];
+
+    
+    [UIView animateWithDuration:1.7 delay:1.0 options:UIViewAnimationOptionTransitionFlipFromBottom animations:^{
+         ((UIImageView *)self.imageViews[self.incrementer]).alpha = 1;
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:1.9 animations:^{
+            self.bigCardImage.alpha = 1;
+            self.positionLabel.alpha = 0.7;
+            self.tarotLore.alpha = 0.7;
+        }];
     }];
     
-    [UIView animateWithDuration:2.1 animations:^{
-        self.bigCardImage.alpha = 1;
-        self.bigCardImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"RW%@",((Card *)self.randomCards[self.incrementer]).image]];
-    }];
-    if (self.incrementer == 1){
-        UIImage *PortraitImage = [[UIImage alloc] initWithCGImage:[UIImage imageNamed:[NSString stringWithFormat:@"RW%@",((Card *)self.randomCards[self.incrementer]).image]].CGImage scale:1.0 orientation:UIImageOrientationRight];
-        ((UIImageView *)self.imageViews[self.incrementer]).image = PortraitImage;
+    
+    
+}
+
+
+-(void)dealForward {
+    if (!(self.incrementer < 10)) {
+        return;
     }
-//    if (((Card *)self.randomCards[self.incrementer]).isUpright){
-////        TRANSFORM UPSIDE
-//        UIImage *flippedImage = [[UIImage alloc] initWithCGImage:[UIImage imageNamed:[NSString stringWithFormat:@"RW%@",((Card *)self.randomCards[self.incrementer]).image]].CGImage scale:1.0 orientation:UIImageOrientationDown];
-//        ((UIImageView *)self.imageViews[self.incrementer]).image = flippedImage;
-//
-//    }
+    
+
+    
     if (self.incrementer == 9) {
         [self.view addSubview:self.detailButton];
+        return;
     }
+        [self fades];
     self.incrementer++;
 }
 
@@ -202,6 +234,10 @@
         _randomCards = [NSArray array];
         _randomCards = [[Prediction celticCross] copy];
         
+        
+        
+
+
 //        NSMutableArray *secx = [NSMutableArray array];
 //        for (int inc = 0; inc < 10;inc++) {
 //            int lul = arc4random_uniform(78);
@@ -304,10 +340,7 @@
         [celticSpread addObject:@"This tenth and last card tells what the final outcome will be. It should include all that has been divined from the other cards on the table."];
         _positionStringsArray = celticSpread;
     }
-
     return _positionStringsArray;
-    
-    
     }
 
 //

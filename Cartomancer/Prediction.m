@@ -80,17 +80,17 @@
     NSArray *randomizedPrediction = [prediction shuffleDeck:allCards];
     NSMutableArray *theBigTenCards = [prediction pickCelticCrossTen:randomizedPrediction];
 //    NSLog(@"Mutable array : %@", theBigTenCards);
-    
+        
     [theBigTenCards enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-
-        int rand = arc4random_uniform(1);
+        
+        int rand = arc4random_uniform(2);
         if (rand == 1){
-        ((Card *)obj).isUpright = YES;
+            [[RLMRealm defaultRealm] beginWriteTransaction];
+            ((Card *)obj).isUpright = YES;
+            [[RLMRealm defaultRealm] commitWriteTransaction];
         }
         
     }];
-    
-    
     return theBigTenCards;
 }
 
