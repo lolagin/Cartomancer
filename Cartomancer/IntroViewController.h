@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface IntroViewController : UIViewController
-@property (nonatomic, weak) IBOutlet UIImageView *introImageView;
+@interface IntroViewController : UIViewController <UITextFieldDelegate>
+
+@property (nonatomic, weak) IBOutlet UIImageView *tarotSplashImageView;
+@property (nonatomic, weak) IBOutlet UITextField *introQuestionInput;
+@property (nonatomic, strong) UILabel *introQuestionLabel;
 
 @end
