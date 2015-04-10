@@ -144,14 +144,14 @@
                         <constraint firstAttribute="width" secondItem="Iey-39-nyf" secondAttribute="height" multiplier="4:7" id="8OL-ZI-Del"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="the future" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4e-Ed-y8a">
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4e-Ed-y8a">
                     <rect key="frame" x="128" y="282" width="343" height="36"/>
                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="30"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" alpha="0.94999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="a moment in time" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zD8-A1-j5l">
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zD8-A1-j5l">
                     <rect key="frame" x="128" y="246" width="343" height="36"/>
                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="30"/>
@@ -168,7 +168,7 @@
                 <constraint firstAttribute="bottom" secondItem="Iey-39-nyf" secondAttribute="bottom" id="LaZ-0Z-2H1"/>
                 <constraint firstAttribute="centerY" secondItem="aeE-rQ-KYD" secondAttribute="centerY" id="MP3-97-Op3"/>
                 <constraint firstItem="zD8-A1-j5l" firstAttribute="width" secondItem="Iey-39-nyf" secondAttribute="width" id="Tsg-Zm-EbH"/>
-                <constraint firstItem="M4e-Ed-y8a" firstAttribute="top" secondItem="zD8-A1-j5l" secondAttribute="bottom" constant="0.5" id="Wqm-lo-L50"/>
+                <constraint firstItem="M4e-Ed-y8a" firstAttribute="top" secondItem="zD8-A1-j5l" secondAttribute="bottom" id="Wqm-lo-L50"/>
                 <constraint firstAttribute="centerY" secondItem="TBv-eT-mVG" secondAttribute="centerY" id="aOA-cz-gXU"/>
                 <constraint firstAttribute="centerY" secondItem="M4e-Ed-y8a" secondAttribute="centerY" id="ieA-7a-tbl"/>
                 <constraint firstItem="aeE-rQ-KYD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jYi-Gh-oyV"/>
