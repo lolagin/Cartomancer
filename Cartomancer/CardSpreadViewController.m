@@ -13,19 +13,30 @@
 
 @interface CardSpreadViewController ()
 @property (nonatomic, strong) IBOutletCollection(UIImageView) NSArray *imageViews;
-
+@property (weak, nonatomic) IBOutlet UIImageView *bigCardImage;
 
 
 
 @property (strong, nonatomic) UITapGestureRecognizer *tappy;
 @property (strong, nonatomic) UISwipeGestureRecognizer *forwardSwish;
 @property (strong, nonatomic) UISwipeGestureRecognizer *backSwish;
-@property (strong, nonatomic) UILabel *tarotLore;
+
+@property (weak, nonatomic) IBOutlet UILabel *tarotLore;
+@property (weak, nonatomic) IBOutlet UILabel *positionLabel;
+
+//@property (strong, nonatomic) UILabel *tarotLore;
 @property (nonatomic, assign) NSUInteger incrementer;
+@property (nonatomic, assign) NSUInteger deckIncrementer;
 @property (nonatomic, assign) CGRect smallerFrame;
 @property (nonatomic, strong) NSArray *randomCards;
+@property (nonatomic, strong) NSArray *positionStringsArray;
+
+
+
 //@property (nonatomic, strong) NSArray *cardDefs;
 @property (nonatomic, strong) UIButton *detailButton;
+@property (nonatomic, strong) UIButton *deckChangeButton;
+@property (nonatomic, strong) NSString *tarotImagePrefix;
 
 @property (nonatomic, strong) UIPopoverController *poppy;
 
@@ -43,7 +54,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
+    self.tarotImagePrefix = @"RW";
     self.tappy = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapHappens)];
     self.forwardSwish = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(dealForward)];
     self.backSwish = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(dealBack)];
@@ -55,7 +66,9 @@
     [self.view addGestureRecognizer:self.tappy];
     [self.view addGestureRecognizer:self.forwardSwish];
     [self.view addGestureRecognizer:self.backSwish];
-    [self.view addSubview:self.tarotLore];
+    
+    
+    [self.view addSubview:self.deckChangeButton];
     [self.imageViews enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         ((UIImageView *)obj).alpha = 0;
     }];
@@ -82,6 +95,36 @@
 
 #pragma mark -
 #pragma mark Actions
+-(void)deckSelector {
+    
+    if (self.deckIncrementer == 0) {
+        self.tarotImagePrefix = @"RW";
+        [self refreshImageViews];
+        self.deckIncrementer++;
+        return;
+    }
+    
+    if (self.deckIncrementer == 1) {
+        self.tarotImagePrefix = @"Marseilles_";
+        [self refreshImageViews];
+        self.deckIncrementer++;
+        return;
+    }
+}
+
+
+
+-(void)refreshImageViews{
+    
+    [self.imageViews enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        ((UIImageView *)obj).image = [UIImage imageNamed:[NSString stringWithFormat:@"%@%@", self.tarotImagePrefix, ((Card *)self.randomCards[idx]).image]];
+    }];
+            self.bigCardImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@%@",self.tarotImagePrefix, ((Card *)self.randomCards[self.incrementer]).image]];
+}
+
+
+
+
 
 -(void)tapHappens {
     [self dealForward];
@@ -94,6 +137,7 @@
     }
     [UIView animateWithDuration:1.4 animations:^{
         self.tarotLore.alpha = 0;
+                self.bigCardImage.alpha = 0;
     }];
     self.tarotLore.text = ((Card *)self.randomCards[self.incrementer]).upDescription;
     [UIView animateWithDuration:1.4 animations:^{
@@ -104,11 +148,20 @@
         ((UIImageView *)self.imageViews[self.incrementer]).image = [UIImage imageNamed:[NSString stringWithFormat:@"RW%@",((Card *)self.randomCards[self.incrementer]).image]];
     }];
     
-
+    [UIView animateWithDuration:2.1 animations:^{
+        self.bigCardImage.alpha = 1;
+        self.bigCardImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"RW%@",((Card *)self.randomCards[self.incrementer]).image]];
+    }];
     if (self.incrementer == 1){
         UIImage *PortraitImage = [[UIImage alloc] initWithCGImage:[UIImage imageNamed:[NSString stringWithFormat:@"RW%@",((Card *)self.randomCards[self.incrementer]).image]].CGImage scale:1.0 orientation:UIImageOrientationRight];
         ((UIImageView *)self.imageViews[self.incrementer]).image = PortraitImage;
     }
+//    if (((Card *)self.randomCards[self.incrementer]).isUpright){
+////        TRANSFORM UPSIDE
+//        UIImage *flippedImage = [[UIImage alloc] initWithCGImage:[UIImage imageNamed:[NSString stringWithFormat:@"RW%@",((Card *)self.randomCards[self.incrementer]).image]].CGImage scale:1.0 orientation:UIImageOrientationDown];
+//        ((UIImageView *)self.imageViews[self.incrementer]).image = flippedImage;
+//
+//    }
     if (self.incrementer == 9) {
         [self.view addSubview:self.detailButton];
     }
@@ -131,10 +184,12 @@
         return;
     }
     if (self.incrementer == 9) {
-//        [self.detailButton removeFromSuperview];
+        [self.detailButton removeFromSuperview];
     }
     [UIView animateWithDuration:0.9 animations:^{
         ((UIImageView *)self.imageViews[self.incrementer]).alpha = 0;
+        self.tarotLore.text = ((Card *)self.randomCards[self.incrementer]).upDescription;
+        
     }];
     self.incrementer--;
 }
@@ -175,32 +230,85 @@
     return _incrementer;
 }
 
--(UILabel *)tarotLore {
-    if (!_tarotLore){
-        CGRect aFrame = CGRectMake((self.view.frame.size.width / 10), (self.view.frame.size.height / 3), (self.view.frame.size.width * 0.9), (self.view.frame.size.height / 3));
-        self.tarotLore = [[UILabel alloc]initWithFrame:aFrame];
-        self.tarotLore.alpha = 0.0;
-        self.tarotLore.backgroundColor = [UIColor blackColor];
-        self.tarotLore.textAlignment = NSTextAlignmentCenter;
-        self.tarotLore.layer.borderWidth = 5;
-        self.tarotLore.layer.borderColor = [UIColor whiteColor].CGColor;
-        self.tarotLore.textColor = [UIColor whiteColor];
-        self.tarotLore.numberOfLines = 10;
+
+-(NSUInteger)deckIncrementer {
+    if (!_deckIncrementer) {
+        _deckIncrementer = 0;
+        return _deckIncrementer;
     }
-    return _tarotLore;
+    if (_deckIncrementer>=2){
+        _deckIncrementer = 0;
+        return _deckIncrementer;
+    }
+    return _deckIncrementer;
 }
+
+
+
+
+//-(UILabel *)tarotLore {
+//    if (!_tarotLore){
+//        CGRect aFrame = CGRectMake((self.view.frame.size.width / 10), (self.view.frame.size.height / 3), (self.view.frame.size.width * 0.9), (self.view.frame.size.height / 3));
+//        self.tarotLore = [[UILabel alloc]initWithFrame:aFrame];
+//        self.tarotLore.alpha = 0.0;
+//        self.tarotLore.backgroundColor = [UIColor blackColor];
+//        self.tarotLore.textAlignment = NSTextAlignmentCenter;
+//        self.tarotLore.layer.borderWidth = 5;
+//        self.tarotLore.layer.borderColor = [UIColor whiteColor].CGColor;
+//        self.tarotLore.textColor = [UIColor whiteColor];
+//        self.tarotLore.numberOfLines = 10;
+//        [self.view addSubview:self.tarotLore];
+//    }
+//    return _tarotLore;
+//}
 
 
 -(UIButton *)detailButton {
     if (!_detailButton){
         self.detailButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        [self.detailButton setBackgroundColor:[UIColor greenColor]];
-        self.detailButton.frame = CGRectMake((self.view.frame.size.width * 0.8), (self.view.frame.size.height * 0.8), (self.view.frame.size.width * 0.1), (self.view.frame.size.height * 0.1));
+        [self.detailButton setBackgroundColor:[UIColor blackColor]];
+        self.detailButton.frame = CGRectMake((self.view.frame.size.width * 0.8), (self.view.frame.size.height * 0.8), (self.view.frame.size.width * 0.2), (self.view.frame.size.height * 0.1));
         self.detailButton.titleLabel.text = @"Summary";
+        self.detailButton.titleLabel.textColor = [UIColor whiteColor];
         [self.detailButton addTarget:self action:@selector(buttonAction) forControlEvents:UIControlEventTouchUpInside];
     }
     return _detailButton;
 }
+
+-(UIButton *)deckChangeButton {
+    if (!_detailButton){
+        self.detailButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        [self.detailButton setBackgroundColor:[UIColor blackColor]];
+        self.detailButton.frame = CGRectMake((self.view.frame.size.width * 0.2), (self.view.frame.size.height * 0.8), (self.view.frame.size.width * 0.2), (self.view.frame.size.height * 0.1));
+        self.detailButton.titleLabel.text = @"Summary";
+        self.detailButton.titleLabel.textColor = [UIColor whiteColor];
+        [self.detailButton addTarget:self action:@selector(deckSelector) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _detailButton;
+}
+
+
+
+-(NSArray *)positionStringsArray {
+    if (!_positionStringsArray){
+        NSMutableArray *celticSpread = [NSMutableArray array];
+        [celticSpread addObject:@"The first card represents the general atmosphere that surrounds the question asked and the influences at work around it."];
+        [celticSpread addObject:@"This card should be laid across the first; it is always read right side up, and shows what the opposing forces may be for good or evil."];
+        [celticSpread addObject:@"The basis of the matter—something that has already become part of the subject’s experience in the past."];
+        [celticSpread addObject:@"This shows the influence that is just passing away."];
+        [celticSpread addObject:@"Represents something that may happen in the future."];
+        [celticSpread addObject:@"Things that will come to pass in the near future—e.g., a meeting, an affair, a person, an influence."];
+        [celticSpread addObject:@"The negative feelings he has about the question asked."];
+        [celticSpread addObject:@"Represents Querent’s environment, the opinions and influence of family and friends on the matter."];
+        [celticSpread addObject:@"Represents the Querent’s own hopes and ideals in the matter.”"];
+        [celticSpread addObject:@"This tenth and last card tells what the final outcome will be. It should include all that has been divined from the other cards on the table."];
+        _positionStringsArray = celticSpread;
+    }
+
+    return _positionStringsArray;
+    
+    
+    }
 
 //
 //-(NSArray *)cardDefs{

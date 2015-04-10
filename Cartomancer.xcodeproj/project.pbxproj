@@ -9,84 +9,6 @@
 /* Begin PBXBuildFile section */
 		6D1C2DA41AD482500086D147 /* tarot.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2DA31AD482500086D147 /* tarot.png */; };
 		6D1C2DAA1AD5B7B20086D147 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2DA91AD5B7B20086D147 /* default.realm */; };
-		6D1C2F841AD641A20086D147 /* tarot0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F361AD641A20086D147 /* tarot0.jpg */; };
-		6D1C2F851AD641A20086D147 /* tarot1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F371AD641A20086D147 /* tarot1.jpg */; };
-		6D1C2F861AD641A20086D147 /* tarot10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F381AD641A20086D147 /* tarot10.jpg */; };
-		6D1C2F871AD641A20086D147 /* tarot11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F391AD641A20086D147 /* tarot11.jpg */; };
-		6D1C2F881AD641A20086D147 /* tarot12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F3A1AD641A20086D147 /* tarot12.jpg */; };
-		6D1C2F891AD641A20086D147 /* tarot13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F3B1AD641A20086D147 /* tarot13.jpg */; };
-		6D1C2F8A1AD641A20086D147 /* tarot14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F3C1AD641A20086D147 /* tarot14.jpg */; };
-		6D1C2F8B1AD641A20086D147 /* tarot15.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F3D1AD641A20086D147 /* tarot15.jpg */; };
-		6D1C2F8C1AD641A20086D147 /* tarot16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F3E1AD641A20086D147 /* tarot16.jpg */; };
-		6D1C2F8D1AD641A20086D147 /* tarot17.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F3F1AD641A20086D147 /* tarot17.jpg */; };
-		6D1C2F8E1AD641A20086D147 /* tarot18.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F401AD641A20086D147 /* tarot18.jpg */; };
-		6D1C2F8F1AD641A20086D147 /* tarot19.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F411AD641A20086D147 /* tarot19.jpg */; };
-		6D1C2F901AD641A20086D147 /* tarot2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F421AD641A20086D147 /* tarot2.jpg */; };
-		6D1C2F911AD641A20086D147 /* tarot20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F431AD641A20086D147 /* tarot20.jpg */; };
-		6D1C2F921AD641A20086D147 /* tarot21.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F441AD641A20086D147 /* tarot21.jpg */; };
-		6D1C2F931AD641A20086D147 /* tarot22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F451AD641A20086D147 /* tarot22.jpg */; };
-		6D1C2F941AD641A20086D147 /* tarot23.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F461AD641A20086D147 /* tarot23.jpg */; };
-		6D1C2F951AD641A20086D147 /* tarot24.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F471AD641A20086D147 /* tarot24.jpg */; };
-		6D1C2F961AD641A20086D147 /* tarot25.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F481AD641A20086D147 /* tarot25.jpg */; };
-		6D1C2F971AD641A20086D147 /* tarot26.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F491AD641A20086D147 /* tarot26.jpg */; };
-		6D1C2F981AD641A20086D147 /* tarot27.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F4A1AD641A20086D147 /* tarot27.jpg */; };
-		6D1C2F991AD641A20086D147 /* tarot28.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F4B1AD641A20086D147 /* tarot28.jpg */; };
-		6D1C2F9A1AD641A20086D147 /* tarot29.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F4C1AD641A20086D147 /* tarot29.jpg */; };
-		6D1C2F9B1AD641A20086D147 /* tarot3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F4D1AD641A20086D147 /* tarot3.jpg */; };
-		6D1C2F9C1AD641A20086D147 /* tarot30.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F4E1AD641A20086D147 /* tarot30.jpg */; };
-		6D1C2F9D1AD641A20086D147 /* tarot31.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F4F1AD641A20086D147 /* tarot31.jpg */; };
-		6D1C2F9E1AD641A20086D147 /* tarot32.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F501AD641A20086D147 /* tarot32.jpg */; };
-		6D1C2F9F1AD641A20086D147 /* tarot33.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F511AD641A20086D147 /* tarot33.jpg */; };
-		6D1C2FA01AD641A20086D147 /* tarot34.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F521AD641A20086D147 /* tarot34.jpg */; };
-		6D1C2FA11AD641A20086D147 /* tarot35.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F531AD641A20086D147 /* tarot35.jpg */; };
-		6D1C2FA21AD641A20086D147 /* tarot36.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F541AD641A20086D147 /* tarot36.jpg */; };
-		6D1C2FA31AD641A20086D147 /* tarot37.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F551AD641A20086D147 /* tarot37.jpg */; };
-		6D1C2FA41AD641A20086D147 /* tarot38.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F561AD641A20086D147 /* tarot38.jpg */; };
-		6D1C2FA51AD641A20086D147 /* tarot39.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F571AD641A20086D147 /* tarot39.jpg */; };
-		6D1C2FA61AD641A20086D147 /* tarot4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F581AD641A20086D147 /* tarot4.jpg */; };
-		6D1C2FA71AD641A20086D147 /* tarot40.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F591AD641A20086D147 /* tarot40.jpg */; };
-		6D1C2FA81AD641A20086D147 /* tarot41.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F5A1AD641A20086D147 /* tarot41.jpg */; };
-		6D1C2FA91AD641A20086D147 /* tarot42.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F5B1AD641A20086D147 /* tarot42.jpg */; };
-		6D1C2FAA1AD641A20086D147 /* tarot43.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F5C1AD641A20086D147 /* tarot43.jpg */; };
-		6D1C2FAB1AD641A20086D147 /* tarot44.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F5D1AD641A20086D147 /* tarot44.jpg */; };
-		6D1C2FAC1AD641A20086D147 /* tarot45.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F5E1AD641A20086D147 /* tarot45.jpg */; };
-		6D1C2FAD1AD641A20086D147 /* tarot46.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F5F1AD641A20086D147 /* tarot46.jpg */; };
-		6D1C2FAE1AD641A20086D147 /* tarot47.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F601AD641A20086D147 /* tarot47.jpg */; };
-		6D1C2FAF1AD641A20086D147 /* tarot48.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F611AD641A20086D147 /* tarot48.jpg */; };
-		6D1C2FB01AD641A20086D147 /* tarot49.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F621AD641A20086D147 /* tarot49.jpg */; };
-		6D1C2FB11AD641A20086D147 /* tarot5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F631AD641A20086D147 /* tarot5.jpg */; };
-		6D1C2FB21AD641A20086D147 /* tarot50.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F641AD641A20086D147 /* tarot50.jpg */; };
-		6D1C2FB31AD641A20086D147 /* tarot51.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F651AD641A20086D147 /* tarot51.jpg */; };
-		6D1C2FB41AD641A20086D147 /* tarot52.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F661AD641A20086D147 /* tarot52.jpg */; };
-		6D1C2FB51AD641A20086D147 /* tarot53.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F671AD641A20086D147 /* tarot53.jpg */; };
-		6D1C2FB61AD641A20086D147 /* tarot54.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F681AD641A20086D147 /* tarot54.jpg */; };
-		6D1C2FB71AD641A20086D147 /* tarot55.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F691AD641A20086D147 /* tarot55.jpg */; };
-		6D1C2FB81AD641A20086D147 /* tarot56.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F6A1AD641A20086D147 /* tarot56.jpg */; };
-		6D1C2FB91AD641A20086D147 /* tarot57.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F6B1AD641A20086D147 /* tarot57.jpg */; };
-		6D1C2FBA1AD641A20086D147 /* tarot58.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F6C1AD641A20086D147 /* tarot58.jpg */; };
-		6D1C2FBB1AD641A20086D147 /* tarot59.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F6D1AD641A20086D147 /* tarot59.jpg */; };
-		6D1C2FBC1AD641A20086D147 /* tarot6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F6E1AD641A20086D147 /* tarot6.jpg */; };
-		6D1C2FBD1AD641A20086D147 /* tarot60.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F6F1AD641A20086D147 /* tarot60.jpg */; };
-		6D1C2FBE1AD641A20086D147 /* tarot61.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F701AD641A20086D147 /* tarot61.jpg */; };
-		6D1C2FBF1AD641A20086D147 /* tarot62.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F711AD641A20086D147 /* tarot62.jpg */; };
-		6D1C2FC01AD641A20086D147 /* tarot63.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F721AD641A20086D147 /* tarot63.jpg */; };
-		6D1C2FC11AD641A20086D147 /* tarot64.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F731AD641A20086D147 /* tarot64.jpg */; };
-		6D1C2FC21AD641A20086D147 /* tarot65.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F741AD641A20086D147 /* tarot65.jpg */; };
-		6D1C2FC31AD641A20086D147 /* tarot66.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F751AD641A20086D147 /* tarot66.jpg */; };
-		6D1C2FC41AD641A20086D147 /* tarot67.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F761AD641A20086D147 /* tarot67.jpg */; };
-		6D1C2FC51AD641A20086D147 /* tarot68.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F771AD641A20086D147 /* tarot68.jpg */; };
-		6D1C2FC61AD641A20086D147 /* tarot69.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F781AD641A20086D147 /* tarot69.jpg */; };
-		6D1C2FC71AD641A20086D147 /* tarot7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F791AD641A20086D147 /* tarot7.jpg */; };
-		6D1C2FC81AD641A20086D147 /* tarot70.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F7A1AD641A20086D147 /* tarot70.jpg */; };
-		6D1C2FC91AD641A20086D147 /* tarot71.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F7B1AD641A20086D147 /* tarot71.jpg */; };
-		6D1C2FCA1AD641A20086D147 /* tarot72.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F7C1AD641A20086D147 /* tarot72.jpg */; };
-		6D1C2FCB1AD641A20086D147 /* tarot73.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F7D1AD641A20086D147 /* tarot73.jpg */; };
-		6D1C2FCC1AD641A20086D147 /* tarot74.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F7E1AD641A20086D147 /* tarot74.jpg */; };
-		6D1C2FCD1AD641A20086D147 /* tarot75.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F7F1AD641A20086D147 /* tarot75.jpg */; };
-		6D1C2FCE1AD641A20086D147 /* tarot76.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F801AD641A20086D147 /* tarot76.jpg */; };
-		6D1C2FCF1AD641A20086D147 /* tarot77.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F811AD641A20086D147 /* tarot77.jpg */; };
-		6D1C2FD01AD641A20086D147 /* tarot8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F821AD641A20086D147 /* tarot8.jpg */; };
-		6D1C2FD11AD641A20086D147 /* tarot9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2F831AD641A20086D147 /* tarot9.jpg */; };
 		6D1C2FD51AD648390086D147 /* DefListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1C2FD31AD648390086D147 /* DefListTableViewController.m */; };
 		6D1C2FD61AD648390086D147 /* DefListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2FD41AD648390086D147 /* DefListTableViewController.xib */; };
 		6D4262E61AD45EEF00F1310B /* curtains.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D4262E51AD45EEF00F1310B /* curtains.png */; };
@@ -117,84 +39,6 @@
 		6D1C2DA31AD482500086D147 /* tarot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tarot.png; sourceTree = "<group>"; };
 		6D1C2DA91AD5B7B20086D147 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; name = default.realm; path = ../default.realm; sourceTree = "<group>"; };
 		6D1C2DAE1AD610FA0086D147 /* masterblaster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = masterblaster.jpg; path = ../../../../../Downloads/masterblaster.jpg; sourceTree = "<group>"; };
-		6D1C2F361AD641A20086D147 /* tarot0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot0.jpg; sourceTree = "<group>"; };
-		6D1C2F371AD641A20086D147 /* tarot1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot1.jpg; sourceTree = "<group>"; };
-		6D1C2F381AD641A20086D147 /* tarot10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot10.jpg; sourceTree = "<group>"; };
-		6D1C2F391AD641A20086D147 /* tarot11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot11.jpg; sourceTree = "<group>"; };
-		6D1C2F3A1AD641A20086D147 /* tarot12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot12.jpg; sourceTree = "<group>"; };
-		6D1C2F3B1AD641A20086D147 /* tarot13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot13.jpg; sourceTree = "<group>"; };
-		6D1C2F3C1AD641A20086D147 /* tarot14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot14.jpg; sourceTree = "<group>"; };
-		6D1C2F3D1AD641A20086D147 /* tarot15.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot15.jpg; sourceTree = "<group>"; };
-		6D1C2F3E1AD641A20086D147 /* tarot16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot16.jpg; sourceTree = "<group>"; };
-		6D1C2F3F1AD641A20086D147 /* tarot17.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot17.jpg; sourceTree = "<group>"; };
-		6D1C2F401AD641A20086D147 /* tarot18.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot18.jpg; sourceTree = "<group>"; };
-		6D1C2F411AD641A20086D147 /* tarot19.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot19.jpg; sourceTree = "<group>"; };
-		6D1C2F421AD641A20086D147 /* tarot2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot2.jpg; sourceTree = "<group>"; };
-		6D1C2F431AD641A20086D147 /* tarot20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot20.jpg; sourceTree = "<group>"; };
-		6D1C2F441AD641A20086D147 /* tarot21.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot21.jpg; sourceTree = "<group>"; };
-		6D1C2F451AD641A20086D147 /* tarot22.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot22.jpg; sourceTree = "<group>"; };
-		6D1C2F461AD641A20086D147 /* tarot23.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot23.jpg; sourceTree = "<group>"; };
-		6D1C2F471AD641A20086D147 /* tarot24.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot24.jpg; sourceTree = "<group>"; };
-		6D1C2F481AD641A20086D147 /* tarot25.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot25.jpg; sourceTree = "<group>"; };
-		6D1C2F491AD641A20086D147 /* tarot26.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot26.jpg; sourceTree = "<group>"; };
-		6D1C2F4A1AD641A20086D147 /* tarot27.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot27.jpg; sourceTree = "<group>"; };
-		6D1C2F4B1AD641A20086D147 /* tarot28.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot28.jpg; sourceTree = "<group>"; };
-		6D1C2F4C1AD641A20086D147 /* tarot29.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot29.jpg; sourceTree = "<group>"; };
-		6D1C2F4D1AD641A20086D147 /* tarot3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot3.jpg; sourceTree = "<group>"; };
-		6D1C2F4E1AD641A20086D147 /* tarot30.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot30.jpg; sourceTree = "<group>"; };
-		6D1C2F4F1AD641A20086D147 /* tarot31.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot31.jpg; sourceTree = "<group>"; };
-		6D1C2F501AD641A20086D147 /* tarot32.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot32.jpg; sourceTree = "<group>"; };
-		6D1C2F511AD641A20086D147 /* tarot33.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot33.jpg; sourceTree = "<group>"; };
-		6D1C2F521AD641A20086D147 /* tarot34.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot34.jpg; sourceTree = "<group>"; };
-		6D1C2F531AD641A20086D147 /* tarot35.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot35.jpg; sourceTree = "<group>"; };
-		6D1C2F541AD641A20086D147 /* tarot36.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot36.jpg; sourceTree = "<group>"; };
-		6D1C2F551AD641A20086D147 /* tarot37.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot37.jpg; sourceTree = "<group>"; };
-		6D1C2F561AD641A20086D147 /* tarot38.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot38.jpg; sourceTree = "<group>"; };
-		6D1C2F571AD641A20086D147 /* tarot39.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot39.jpg; sourceTree = "<group>"; };
-		6D1C2F581AD641A20086D147 /* tarot4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot4.jpg; sourceTree = "<group>"; };
-		6D1C2F591AD641A20086D147 /* tarot40.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot40.jpg; sourceTree = "<group>"; };
-		6D1C2F5A1AD641A20086D147 /* tarot41.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot41.jpg; sourceTree = "<group>"; };
-		6D1C2F5B1AD641A20086D147 /* tarot42.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot42.jpg; sourceTree = "<group>"; };
-		6D1C2F5C1AD641A20086D147 /* tarot43.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot43.jpg; sourceTree = "<group>"; };
-		6D1C2F5D1AD641A20086D147 /* tarot44.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot44.jpg; sourceTree = "<group>"; };
-		6D1C2F5E1AD641A20086D147 /* tarot45.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot45.jpg; sourceTree = "<group>"; };
-		6D1C2F5F1AD641A20086D147 /* tarot46.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot46.jpg; sourceTree = "<group>"; };
-		6D1C2F601AD641A20086D147 /* tarot47.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot47.jpg; sourceTree = "<group>"; };
-		6D1C2F611AD641A20086D147 /* tarot48.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot48.jpg; sourceTree = "<group>"; };
-		6D1C2F621AD641A20086D147 /* tarot49.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot49.jpg; sourceTree = "<group>"; };
-		6D1C2F631AD641A20086D147 /* tarot5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot5.jpg; sourceTree = "<group>"; };
-		6D1C2F641AD641A20086D147 /* tarot50.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot50.jpg; sourceTree = "<group>"; };
-		6D1C2F651AD641A20086D147 /* tarot51.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot51.jpg; sourceTree = "<group>"; };
-		6D1C2F661AD641A20086D147 /* tarot52.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot52.jpg; sourceTree = "<group>"; };
-		6D1C2F671AD641A20086D147 /* tarot53.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot53.jpg; sourceTree = "<group>"; };
-		6D1C2F681AD641A20086D147 /* tarot54.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot54.jpg; sourceTree = "<group>"; };
-		6D1C2F691AD641A20086D147 /* tarot55.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot55.jpg; sourceTree = "<group>"; };
-		6D1C2F6A1AD641A20086D147 /* tarot56.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot56.jpg; sourceTree = "<group>"; };
-		6D1C2F6B1AD641A20086D147 /* tarot57.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot57.jpg; sourceTree = "<group>"; };
-		6D1C2F6C1AD641A20086D147 /* tarot58.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot58.jpg; sourceTree = "<group>"; };
-		6D1C2F6D1AD641A20086D147 /* tarot59.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot59.jpg; sourceTree = "<group>"; };
-		6D1C2F6E1AD641A20086D147 /* tarot6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot6.jpg; sourceTree = "<group>"; };
-		6D1C2F6F1AD641A20086D147 /* tarot60.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot60.jpg; sourceTree = "<group>"; };
-		6D1C2F701AD641A20086D147 /* tarot61.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot61.jpg; sourceTree = "<group>"; };
-		6D1C2F711AD641A20086D147 /* tarot62.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot62.jpg; sourceTree = "<group>"; };
-		6D1C2F721AD641A20086D147 /* tarot63.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot63.jpg; sourceTree = "<group>"; };
-		6D1C2F731AD641A20086D147 /* tarot64.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot64.jpg; sourceTree = "<group>"; };
-		6D1C2F741AD641A20086D147 /* tarot65.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot65.jpg; sourceTree = "<group>"; };
-		6D1C2F751AD641A20086D147 /* tarot66.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot66.jpg; sourceTree = "<group>"; };
-		6D1C2F761AD641A20086D147 /* tarot67.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot67.jpg; sourceTree = "<group>"; };
-		6D1C2F771AD641A20086D147 /* tarot68.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot68.jpg; sourceTree = "<group>"; };
-		6D1C2F781AD641A20086D147 /* tarot69.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot69.jpg; sourceTree = "<group>"; };
-		6D1C2F791AD641A20086D147 /* tarot7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot7.jpg; sourceTree = "<group>"; };
-		6D1C2F7A1AD641A20086D147 /* tarot70.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot70.jpg; sourceTree = "<group>"; };
-		6D1C2F7B1AD641A20086D147 /* tarot71.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot71.jpg; sourceTree = "<group>"; };
-		6D1C2F7C1AD641A20086D147 /* tarot72.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot72.jpg; sourceTree = "<group>"; };
-		6D1C2F7D1AD641A20086D147 /* tarot73.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot73.jpg; sourceTree = "<group>"; };
-		6D1C2F7E1AD641A20086D147 /* tarot74.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot74.jpg; sourceTree = "<group>"; };
-		6D1C2F7F1AD641A20086D147 /* tarot75.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot75.jpg; sourceTree = "<group>"; };
-		6D1C2F801AD641A20086D147 /* tarot76.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot76.jpg; sourceTree = "<group>"; };
-		6D1C2F811AD641A20086D147 /* tarot77.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot77.jpg; sourceTree = "<group>"; };
-		6D1C2F821AD641A20086D147 /* tarot8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot8.jpg; sourceTree = "<group>"; };
-		6D1C2F831AD641A20086D147 /* tarot9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarot9.jpg; sourceTree = "<group>"; };
 		6D1C2FD21AD648390086D147 /* DefListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DefListTableViewController.h; path = ../DefListTableViewController.h; sourceTree = "<group>"; };
 		6D1C2FD31AD648390086D147 /* DefListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DefListTableViewController.m; path = ../DefListTableViewController.m; sourceTree = "<group>"; };
 		6D1C2FD41AD648390086D147 /* DefListTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DefListTableViewController.xib; path = ../DefListTableViewController.xib; sourceTree = "<group>"; };
@@ -240,92 +84,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6D1C2F351AD641A20086D147 /* JPEGS 20 percent */ = {
-			isa = PBXGroup;
-			children = (
-				6D1C2F361AD641A20086D147 /* tarot0.jpg */,
-				6D1C2F371AD641A20086D147 /* tarot1.jpg */,
-				6D1C2F381AD641A20086D147 /* tarot10.jpg */,
-				6D1C2F391AD641A20086D147 /* tarot11.jpg */,
-				6D1C2F3A1AD641A20086D147 /* tarot12.jpg */,
-				6D1C2F3B1AD641A20086D147 /* tarot13.jpg */,
-				6D1C2F3C1AD641A20086D147 /* tarot14.jpg */,
-				6D1C2F3D1AD641A20086D147 /* tarot15.jpg */,
-				6D1C2F3E1AD641A20086D147 /* tarot16.jpg */,
-				6D1C2F3F1AD641A20086D147 /* tarot17.jpg */,
-				6D1C2F401AD641A20086D147 /* tarot18.jpg */,
-				6D1C2F411AD641A20086D147 /* tarot19.jpg */,
-				6D1C2F421AD641A20086D147 /* tarot2.jpg */,
-				6D1C2F431AD641A20086D147 /* tarot20.jpg */,
-				6D1C2F441AD641A20086D147 /* tarot21.jpg */,
-				6D1C2F451AD641A20086D147 /* tarot22.jpg */,
-				6D1C2F461AD641A20086D147 /* tarot23.jpg */,
-				6D1C2F471AD641A20086D147 /* tarot24.jpg */,
-				6D1C2F481AD641A20086D147 /* tarot25.jpg */,
-				6D1C2F491AD641A20086D147 /* tarot26.jpg */,
-				6D1C2F4A1AD641A20086D147 /* tarot27.jpg */,
-				6D1C2F4B1AD641A20086D147 /* tarot28.jpg */,
-				6D1C2F4C1AD641A20086D147 /* tarot29.jpg */,
-				6D1C2F4D1AD641A20086D147 /* tarot3.jpg */,
-				6D1C2F4E1AD641A20086D147 /* tarot30.jpg */,
-				6D1C2F4F1AD641A20086D147 /* tarot31.jpg */,
-				6D1C2F501AD641A20086D147 /* tarot32.jpg */,
-				6D1C2F511AD641A20086D147 /* tarot33.jpg */,
-				6D1C2F521AD641A20086D147 /* tarot34.jpg */,
-				6D1C2F531AD641A20086D147 /* tarot35.jpg */,
-				6D1C2F541AD641A20086D147 /* tarot36.jpg */,
-				6D1C2F551AD641A20086D147 /* tarot37.jpg */,
-				6D1C2F561AD641A20086D147 /* tarot38.jpg */,
-				6D1C2F571AD641A20086D147 /* tarot39.jpg */,
-				6D1C2F581AD641A20086D147 /* tarot4.jpg */,
-				6D1C2F591AD641A20086D147 /* tarot40.jpg */,
-				6D1C2F5A1AD641A20086D147 /* tarot41.jpg */,
-				6D1C2F5B1AD641A20086D147 /* tarot42.jpg */,
-				6D1C2F5C1AD641A20086D147 /* tarot43.jpg */,
-				6D1C2F5D1AD641A20086D147 /* tarot44.jpg */,
-				6D1C2F5E1AD641A20086D147 /* tarot45.jpg */,
-				6D1C2F5F1AD641A20086D147 /* tarot46.jpg */,
-				6D1C2F601AD641A20086D147 /* tarot47.jpg */,
-				6D1C2F611AD641A20086D147 /* tarot48.jpg */,
-				6D1C2F621AD641A20086D147 /* tarot49.jpg */,
-				6D1C2F631AD641A20086D147 /* tarot5.jpg */,
-				6D1C2F641AD641A20086D147 /* tarot50.jpg */,
-				6D1C2F651AD641A20086D147 /* tarot51.jpg */,
-				6D1C2F661AD641A20086D147 /* tarot52.jpg */,
-				6D1C2F671AD641A20086D147 /* tarot53.jpg */,
-				6D1C2F681AD641A20086D147 /* tarot54.jpg */,
-				6D1C2F691AD641A20086D147 /* tarot55.jpg */,
-				6D1C2F6A1AD641A20086D147 /* tarot56.jpg */,
-				6D1C2F6B1AD641A20086D147 /* tarot57.jpg */,
-				6D1C2F6C1AD641A20086D147 /* tarot58.jpg */,
-				6D1C2F6D1AD641A20086D147 /* tarot59.jpg */,
-				6D1C2F6E1AD641A20086D147 /* tarot6.jpg */,
-				6D1C2F6F1AD641A20086D147 /* tarot60.jpg */,
-				6D1C2F701AD641A20086D147 /* tarot61.jpg */,
-				6D1C2F711AD641A20086D147 /* tarot62.jpg */,
-				6D1C2F721AD641A20086D147 /* tarot63.jpg */,
-				6D1C2F731AD641A20086D147 /* tarot64.jpg */,
-				6D1C2F741AD641A20086D147 /* tarot65.jpg */,
-				6D1C2F751AD641A20086D147 /* tarot66.jpg */,
-				6D1C2F761AD641A20086D147 /* tarot67.jpg */,
-				6D1C2F771AD641A20086D147 /* tarot68.jpg */,
-				6D1C2F781AD641A20086D147 /* tarot69.jpg */,
-				6D1C2F791AD641A20086D147 /* tarot7.jpg */,
-				6D1C2F7A1AD641A20086D147 /* tarot70.jpg */,
-				6D1C2F7B1AD641A20086D147 /* tarot71.jpg */,
-				6D1C2F7C1AD641A20086D147 /* tarot72.jpg */,
-				6D1C2F7D1AD641A20086D147 /* tarot73.jpg */,
-				6D1C2F7E1AD641A20086D147 /* tarot74.jpg */,
-				6D1C2F7F1AD641A20086D147 /* tarot75.jpg */,
-				6D1C2F801AD641A20086D147 /* tarot76.jpg */,
-				6D1C2F811AD641A20086D147 /* tarot77.jpg */,
-				6D1C2F821AD641A20086D147 /* tarot8.jpg */,
-				6D1C2F831AD641A20086D147 /* tarot9.jpg */,
-			);
-			name = "JPEGS 20 percent";
-			path = "JPEGS 20 percent copy 2";
-			sourceTree = "<group>";
-		};
 		772212EB1AD36BB200A7722C = {
 			isa = PBXGroup;
 			children = (
@@ -377,7 +135,6 @@
 				772212F91AD36BB200A7722C /* main.m */,
 				6D1C2DA91AD5B7B20086D147 /* default.realm */,
 				7722131F1AD36C9500A7722C /* libc++.dylib */,
-				6D1C2F351AD641A20086D147 /* JPEGS 20 percent */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -479,91 +236,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D1C2FA71AD641A20086D147 /* tarot40.jpg in Resources */,
-				6D1C2FAE1AD641A20086D147 /* tarot47.jpg in Resources */,
-				6D1C2FB31AD641A20086D147 /* tarot51.jpg in Resources */,
-				6D1C2FB81AD641A20086D147 /* tarot56.jpg in Resources */,
-				6D1C2F971AD641A20086D147 /* tarot26.jpg in Resources */,
-				6D1C2F841AD641A20086D147 /* tarot0.jpg in Resources */,
-				6D1C2FA11AD641A20086D147 /* tarot35.jpg in Resources */,
-				6D1C2F8A1AD641A20086D147 /* tarot14.jpg in Resources */,
 				6D1C2FD61AD648390086D147 /* DefListTableViewController.xib in Resources */,
-				6D1C2FA01AD641A20086D147 /* tarot34.jpg in Resources */,
-				6D1C2F881AD641A20086D147 /* tarot12.jpg in Resources */,
-				6D1C2F921AD641A20086D147 /* tarot21.jpg in Resources */,
 				6D4262E61AD45EEF00F1310B /* curtains.png in Resources */,
-				6D1C2F941AD641A20086D147 /* tarot23.jpg in Resources */,
-				6D1C2F8E1AD641A20086D147 /* tarot18.jpg in Resources */,
-				6D1C2FA51AD641A20086D147 /* tarot39.jpg in Resources */,
-				6D1C2F961AD641A20086D147 /* tarot25.jpg in Resources */,
-				6D1C2FCC1AD641A20086D147 /* tarot74.jpg in Resources */,
-				6D1C2FC31AD641A20086D147 /* tarot66.jpg in Resources */,
-				6D1C2FBA1AD641A20086D147 /* tarot58.jpg in Resources */,
-				6D1C2FB01AD641A20086D147 /* tarot49.jpg in Resources */,
-				6D1C2FBB1AD641A20086D147 /* tarot59.jpg in Resources */,
-				6D1C2FC01AD641A20086D147 /* tarot63.jpg in Resources */,
-				6D1C2FD11AD641A20086D147 /* tarot9.jpg in Resources */,
-				6D1C2FCF1AD641A20086D147 /* tarot77.jpg in Resources */,
-				6D1C2F861AD641A20086D147 /* tarot10.jpg in Resources */,
-				6D1C2F991AD641A20086D147 /* tarot28.jpg in Resources */,
-				6D1C2FCD1AD641A20086D147 /* tarot75.jpg in Resources */,
-				6D1C2FA61AD641A20086D147 /* tarot4.jpg in Resources */,
-				6D1C2FB41AD641A20086D147 /* tarot52.jpg in Resources */,
-				6D1C2F8F1AD641A20086D147 /* tarot19.jpg in Resources */,
-				6D1C2FD01AD641A20086D147 /* tarot8.jpg in Resources */,
-				6D1C2FBC1AD641A20086D147 /* tarot6.jpg in Resources */,
-				6D1C2FC11AD641A20086D147 /* tarot64.jpg in Resources */,
-				6D1C2FA31AD641A20086D147 /* tarot37.jpg in Resources */,
-				6D1C2FB71AD641A20086D147 /* tarot55.jpg in Resources */,
-				6D1C2FCB1AD641A20086D147 /* tarot73.jpg in Resources */,
-				6D1C2FC71AD641A20086D147 /* tarot7.jpg in Resources */,
-				6D1C2F901AD641A20086D147 /* tarot2.jpg in Resources */,
-				6D1C2FBD1AD641A20086D147 /* tarot60.jpg in Resources */,
-				6D1C2FAF1AD641A20086D147 /* tarot48.jpg in Resources */,
-				6D1C2F891AD641A20086D147 /* tarot13.jpg in Resources */,
 				6D1C2DAA1AD5B7B20086D147 /* default.realm in Resources */,
-				6D1C2FC51AD641A20086D147 /* tarot68.jpg in Resources */,
-				6D1C2F851AD641A20086D147 /* tarot1.jpg in Resources */,
-				6D1C2FB61AD641A20086D147 /* tarot54.jpg in Resources */,
 				6D1C2DA41AD482500086D147 /* tarot.png in Resources */,
-				6D1C2F8B1AD641A20086D147 /* tarot15.jpg in Resources */,
-				6D1C2FB51AD641A20086D147 /* tarot53.jpg in Resources */,
-				6D1C2F9C1AD641A20086D147 /* tarot30.jpg in Resources */,
-				6D1C2F981AD641A20086D147 /* tarot27.jpg in Resources */,
-				6D1C2FA41AD641A20086D147 /* tarot38.jpg in Resources */,
-				6D1C2FC21AD641A20086D147 /* tarot65.jpg in Resources */,
-				6D1C2FC61AD641A20086D147 /* tarot69.jpg in Resources */,
-				6D1C2FAB1AD641A20086D147 /* tarot44.jpg in Resources */,
-				6D1C2FB91AD641A20086D147 /* tarot57.jpg in Resources */,
-				6D1C2F951AD641A20086D147 /* tarot24.jpg in Resources */,
-				6D1C2FBF1AD641A20086D147 /* tarot62.jpg in Resources */,
-				6D1C2FC91AD641A20086D147 /* tarot71.jpg in Resources */,
-				6D1C2F9D1AD641A20086D147 /* tarot31.jpg in Resources */,
 				772213081AD36BB200A7722C /* LaunchScreen.xib in Resources */,
-				6D1C2F9E1AD641A20086D147 /* tarot32.jpg in Resources */,
-				6D1C2F9B1AD641A20086D147 /* tarot3.jpg in Resources */,
-				6D1C2F931AD641A20086D147 /* tarot22.jpg in Resources */,
-				6D1C2FA91AD641A20086D147 /* tarot42.jpg in Resources */,
 				6D4262EB1AD4624E00F1310B /* CardSpreadViewController.xib in Resources */,
-				6D1C2F911AD641A20086D147 /* tarot20.jpg in Resources */,
-				6D1C2FAD1AD641A20086D147 /* tarot46.jpg in Resources */,
-				6D1C2FA21AD641A20086D147 /* tarot36.jpg in Resources */,
-				6D1C2FAA1AD641A20086D147 /* tarot43.jpg in Resources */,
-				6D1C2F8C1AD641A20086D147 /* tarot16.jpg in Resources */,
-				6D1C2FC81AD641A20086D147 /* tarot70.jpg in Resources */,
-				6D1C2FCE1AD641A20086D147 /* tarot76.jpg in Resources */,
-				6D1C2FAC1AD641A20086D147 /* tarot45.jpg in Resources */,
-				6D1C2FC41AD641A20086D147 /* tarot67.jpg in Resources */,
-				6D1C2F9A1AD641A20086D147 /* tarot29.jpg in Resources */,
-				6D1C2FB21AD641A20086D147 /* tarot50.jpg in Resources */,
 				772213051AD36BB200A7722C /* Images.xcassets in Resources */,
-				6D1C2F871AD641A20086D147 /* tarot11.jpg in Resources */,
-				6D1C2F8D1AD641A20086D147 /* tarot17.jpg in Resources */,
-				6D1C2F9F1AD641A20086D147 /* tarot33.jpg in Resources */,
-				6D1C2FA81AD641A20086D147 /* tarot41.jpg in Resources */,
-				6D1C2FB11AD641A20086D147 /* tarot5.jpg in Resources */,
-				6D1C2FBE1AD641A20086D147 /* tarot61.jpg in Resources */,
-				6D1C2FCA1AD641A20086D147 /* tarot72.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

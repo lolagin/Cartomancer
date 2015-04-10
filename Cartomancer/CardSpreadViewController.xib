@@ -8,6 +8,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardSpreadViewController">
             <connections>
+                <outlet property="bigCardImage" destination="Iey-39-nyf" id="4NG-uy-6Qz"/>
+                <outlet property="positionLabel" destination="zD8-A1-j5l" id="IXe-ih-7m5"/>
+                <outlet property="tarotLore" destination="M4e-Ed-y8a" id="Vma-XW-zLL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outletCollection property="imageViews" destination="s5J-9k-dWI" id="twz-bN-3NE"/>
                 <outletCollection property="imageViews" destination="XS7-xD-9Fn" id="8HQ-Tm-RBb"/>
@@ -45,7 +48,7 @@
                             </constraints>
                         </imageView>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tarot.png" translatesAutoresizingMaskIntoConstraints="NO" id="fFr-Ta-Qh0">
-                            <rect key="frame" x="180" y="390.5" width="120" height="209.5"/>
+                            <rect key="frame" x="180" y="390" width="120" height="210"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="fFr-Ta-Qh0" secondAttribute="height" multiplier="4:7" id="AIS-ZS-zJq"/>
                             </constraints>
@@ -63,7 +66,7 @@
                             </constraints>
                         </imageView>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tarot.png" translatesAutoresizingMaskIntoConstraints="NO" id="lZK-gb-PSo">
-                            <rect key="frame" x="180" y="0.0" width="120" height="210.5"/>
+                            <rect key="frame" x="180" y="0.0" width="120" height="211"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="lZK-gb-PSo" secondAttribute="height" multiplier="4:7" id="2rr-vG-d4l"/>
                             </constraints>
@@ -94,12 +97,6 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TBv-eT-mVG">
                     <rect key="frame" x="480" y="0.0" width="120" height="600"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tarot.png" translatesAutoresizingMaskIntoConstraints="NO" id="wiY-Kh-drd">
-                            <rect key="frame" x="0.0" y="0.0" width="120" height="210"/>
-                            <constraints>
-                                <constraint firstAttribute="width" secondItem="wiY-Kh-drd" secondAttribute="height" multiplier="40:23" constant="-245.21739130434781" id="d00-bU-PNy"/>
-                            </constraints>
-                        </imageView>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tarot.png" translatesAutoresizingMaskIntoConstraints="NO" id="qkp-ap-94t">
                             <rect key="frame" x="0.0" y="131" width="120" height="210"/>
                             <constraints>
@@ -116,6 +113,12 @@
                             <rect key="frame" x="0.0" y="390" width="120" height="210"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="gAc-R6-z21" secondAttribute="height" multiplier="40:23" constant="-245.21739130434781" id="y4K-W8-V0g"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tarot.png" translatesAutoresizingMaskIntoConstraints="NO" id="wiY-Kh-drd">
+                            <rect key="frame" x="0.0" y="0.0" width="120" height="210"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="wiY-Kh-drd" secondAttribute="height" multiplier="40:23" constant="-245.21739130434781" id="d00-bU-PNy"/>
                             </constraints>
                         </imageView>
                     </subviews>
@@ -135,29 +138,49 @@
                         <constraint firstAttribute="trailing" secondItem="tPw-Sc-lgy" secondAttribute="trailing" id="xFP-I7-6WS"/>
                     </constraints>
                 </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Iey-39-nyf">
+                    <rect key="frame" x="128" y="0.0" width="343" height="600"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Iey-39-nyf" secondAttribute="height" multiplier="4:7" id="8OL-ZI-Del"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="the future" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4e-Ed-y8a">
+                    <rect key="frame" x="128" y="282" width="343" height="36"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.94999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="the future" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zD8-A1-j5l">
+                    <rect key="frame" x="128" y="246" width="343" height="36"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="TBv-eT-mVG" secondAttribute="trailing" id="4Lb-Yl-PHK"/>
-                <constraint firstAttribute="bottom" secondItem="TBv-eT-mVG" secondAttribute="bottom" id="8Da-a7-MFh"/>
                 <constraint firstItem="avn-Rb-ZWM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="AEC-Md-wbg"/>
                 <constraint firstItem="aeE-rQ-KYD" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="1.6" id="Cq2-L9-hw1"/>
+                <constraint firstItem="zD8-A1-j5l" firstAttribute="leading" secondItem="M4e-Ed-y8a" secondAttribute="leading" id="HDc-sL-q52"/>
+                <constraint firstItem="M4e-Ed-y8a" firstAttribute="width" secondItem="Iey-39-nyf" secondAttribute="width" id="KG2-UH-RHt"/>
+                <constraint firstAttribute="bottom" secondItem="Iey-39-nyf" secondAttribute="bottom" id="LaZ-0Z-2H1"/>
                 <constraint firstAttribute="centerY" secondItem="aeE-rQ-KYD" secondAttribute="centerY" id="MP3-97-Op3"/>
+                <constraint firstItem="zD8-A1-j5l" firstAttribute="width" secondItem="Iey-39-nyf" secondAttribute="width" id="Tsg-Zm-EbH"/>
+                <constraint firstItem="M4e-Ed-y8a" firstAttribute="top" secondItem="zD8-A1-j5l" secondAttribute="bottom" constant="0.5" id="Wqm-lo-L50"/>
                 <constraint firstAttribute="centerY" secondItem="TBv-eT-mVG" secondAttribute="centerY" id="aOA-cz-gXU"/>
+                <constraint firstAttribute="centerY" secondItem="M4e-Ed-y8a" secondAttribute="centerY" id="ieA-7a-tbl"/>
                 <constraint firstItem="aeE-rQ-KYD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jYi-Gh-oyV"/>
+                <constraint firstAttribute="centerX" secondItem="M4e-Ed-y8a" secondAttribute="centerX" id="k5n-nv-t7O"/>
+                <constraint firstAttribute="centerX" secondItem="Iey-39-nyf" secondAttribute="centerX" id="kJO-Nn-gD4"/>
                 <constraint firstItem="TBv-eT-mVG" firstAttribute="width" relation="greaterThanOrEqual" secondItem="aeE-rQ-KYD" secondAttribute="width" multiplier="0.2" id="lil-5b-0jE"/>
                 <constraint firstAttribute="bottom" secondItem="avn-Rb-ZWM" secondAttribute="bottom" id="mLO-f1-Ms7"/>
-                <constraint firstItem="TBv-eT-mVG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rZG-Oe-72b"/>
+                <constraint firstItem="Iey-39-nyf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="my9-jG-Rsu"/>
                 <constraint firstAttribute="trailing" secondItem="avn-Rb-ZWM" secondAttribute="trailing" id="raS-Yy-HKA"/>
                 <constraint firstItem="avn-Rb-ZWM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rda-yI-gZU"/>
                 <constraint firstItem="TBv-eT-mVG" firstAttribute="leading" secondItem="aeE-rQ-KYD" secondAttribute="trailing" id="rtr-HS-X3C"/>
             </constraints>
-            <variation key="default">
-                <mask key="constraints">
-                    <exclude reference="8Da-a7-MFh"/>
-                    <exclude reference="rZG-Oe-72b"/>
-                </mask>
-            </variation>
             <point key="canvasLocation" x="206" y="326"/>
         </view>
     </objects>

@@ -53,7 +53,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell" forIndexPath:indexPath];
-    
+    cell.backgroundColor = [UIColor clearColor];
     cell.textLabel.text = ((Card *)self.cardBank[indexPath.row]).upDescription;
     
     return cell;

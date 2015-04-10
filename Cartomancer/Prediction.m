@@ -9,6 +9,7 @@
 #import "Prediction.h"
 
 
+
 @interface Prediction ()
 //@property (strong, nonatomic)RLMRealm *realm;
 
@@ -66,7 +67,7 @@
 - (NSArray *)pickCelticCrossTen:(NSMutableArray *)shuffledDeck {
     // load the shuffled Deck (78 cards), strip to the first 10
     
-    NSMutableArray *celticCrossTen = [shuffledDeck subarrayWithRange:NSMakeRange(0, 10)];
+    NSMutableArray *celticCrossTen = [[shuffledDeck subarrayWithRange:NSMakeRange(0, 10)]mutableCopy];
     // return these
     return [celticCrossTen copy];
     
@@ -78,7 +79,18 @@
     NSArray *allCards = [prediction RLMResultsToNSArray:[Card allObjects]];
     NSArray *randomizedPrediction = [prediction shuffleDeck:allCards];
     NSMutableArray *theBigTenCards = [prediction pickCelticCrossTen:randomizedPrediction];
-    NSLog(@"Mutable array : %@", theBigTenCards);
+//    NSLog(@"Mutable array : %@", theBigTenCards);
+    
+    [theBigTenCards enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+
+        int rand = arc4random_uniform(1);
+        if (rand == 1){
+        ((Card *)obj).isUpright = YES;
+        }
+        
+    }];
+    
+    
     return theBigTenCards;
 }
 
