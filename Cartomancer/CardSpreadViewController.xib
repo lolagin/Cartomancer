@@ -29,7 +29,7 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="curtains.png" translatesAutoresizingMaskIntoConstraints="NO" id="avn-Rb-ZWM">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="texture.png" translatesAutoresizingMaskIntoConstraints="NO" id="avn-Rb-ZWM">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aeE-rQ-KYD">
@@ -185,7 +185,7 @@
         </view>
     </objects>
     <resources>
-        <image name="curtains.png" width="1600" height="1067"/>
         <image name="tarot.png" width="597" height="1197"/>
+        <image name="texture.png" width="1024" height="1024"/>
     </resources>
 </document>

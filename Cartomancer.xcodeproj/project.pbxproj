@@ -11,9 +11,10 @@
 		6D1C2DAA1AD5B7B20086D147 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2DA91AD5B7B20086D147 /* default.realm */; };
 		6D1C2FD51AD648390086D147 /* DefListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1C2FD31AD648390086D147 /* DefListTableViewController.m */; };
 		6D1C2FD61AD648390086D147 /* DefListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D1C2FD41AD648390086D147 /* DefListTableViewController.xib */; };
-		6D4262E61AD45EEF00F1310B /* curtains.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D4262E51AD45EEF00F1310B /* curtains.png */; };
 		6D4262EA1AD4624E00F1310B /* CardSpreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4262E81AD4624E00F1310B /* CardSpreadViewController.m */; };
 		6D4262EB1AD4624E00F1310B /* CardSpreadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D4262E91AD4624E00F1310B /* CardSpreadViewController.xib */; };
+		6D8F18D81ADC3B7A00BC7006 /* churchtex.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D8F18D71ADC3B7A00BC7006 /* churchtex.png */; };
+		6D8F18DE1ADC4B4300BC7006 /* texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D8F18DD1ADC4B4300BC7006 /* texture.png */; };
 		772212FA1AD36BB200A7722C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 772212F91AD36BB200A7722C /* main.m */; };
 		772212FD1AD36BB200A7722C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 772212FC1AD36BB200A7722C /* AppDelegate.m */; };
 		772213051AD36BB200A7722C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 772213041AD36BB200A7722C /* Images.xcassets */; };
@@ -38,14 +39,14 @@
 /* Begin PBXFileReference section */
 		6D1C2DA31AD482500086D147 /* tarot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tarot.png; sourceTree = "<group>"; };
 		6D1C2DA91AD5B7B20086D147 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; name = default.realm; path = ../default.realm; sourceTree = "<group>"; };
-		6D1C2DAE1AD610FA0086D147 /* masterblaster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = masterblaster.jpg; path = ../../../../../Downloads/masterblaster.jpg; sourceTree = "<group>"; };
 		6D1C2FD21AD648390086D147 /* DefListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DefListTableViewController.h; path = ../DefListTableViewController.h; sourceTree = "<group>"; };
 		6D1C2FD31AD648390086D147 /* DefListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DefListTableViewController.m; path = ../DefListTableViewController.m; sourceTree = "<group>"; };
 		6D1C2FD41AD648390086D147 /* DefListTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DefListTableViewController.xib; path = ../DefListTableViewController.xib; sourceTree = "<group>"; };
-		6D4262E51AD45EEF00F1310B /* curtains.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = curtains.png; sourceTree = "<group>"; };
 		6D4262E71AD4624E00F1310B /* CardSpreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardSpreadViewController.h; sourceTree = "<group>"; };
 		6D4262E81AD4624E00F1310B /* CardSpreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardSpreadViewController.m; sourceTree = "<group>"; };
 		6D4262E91AD4624E00F1310B /* CardSpreadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardSpreadViewController.xib; sourceTree = "<group>"; };
+		6D8F18D71ADC3B7A00BC7006 /* churchtex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = churchtex.png; sourceTree = "<group>"; };
+		6D8F18DD1ADC4B4300BC7006 /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture.png; sourceTree = "<group>"; };
 		772212F41AD36BB200A7722C /* Cartomancer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cartomancer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		772212F81AD36BB200A7722C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		772212F91AD36BB200A7722C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -122,8 +123,7 @@
 				7722131D1AD36C7F00A7722C /* Realm.framework */,
 				772212F71AD36BB200A7722C /* Supporting Files */,
 				6D1C2DA31AD482500086D147 /* tarot.png */,
-				6D1C2DAE1AD610FA0086D147 /* masterblaster.jpg */,
-				6D4262E51AD45EEF00F1310B /* curtains.png */,
+				6D8F18D71ADC3B7A00BC7006 /* churchtex.png */,
 			);
 			path = Cartomancer;
 			sourceTree = "<group>";
@@ -133,6 +133,7 @@
 			children = (
 				772212F81AD36BB200A7722C /* Info.plist */,
 				772212F91AD36BB200A7722C /* main.m */,
+				6D8F18DD1ADC4B4300BC7006 /* texture.png */,
 				6D1C2DA91AD5B7B20086D147 /* default.realm */,
 				7722131F1AD36C9500A7722C /* libc++.dylib */,
 			);
@@ -237,11 +238,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D1C2FD61AD648390086D147 /* DefListTableViewController.xib in Resources */,
-				6D4262E61AD45EEF00F1310B /* curtains.png in Resources */,
 				6D1C2DAA1AD5B7B20086D147 /* default.realm in Resources */,
 				6D1C2DA41AD482500086D147 /* tarot.png in Resources */,
+				6D8F18DE1ADC4B4300BC7006 /* texture.png in Resources */,
 				772213081AD36BB200A7722C /* LaunchScreen.xib in Resources */,
 				6D4262EB1AD4624E00F1310B /* CardSpreadViewController.xib in Resources */,
+				6D8F18D81ADC3B7A00BC7006 /* churchtex.png in Resources */,
 				772213051AD36BB200A7722C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
