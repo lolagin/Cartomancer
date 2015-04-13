@@ -2,11 +2,10 @@
 ## welcome to teh cartomincer a app of fortun
 
 ---
-appis named: Cartomizer
-author: JC Morningstar && Massimo Visconti
-tags: tarot, awesome, test, appsforwinners
-date: 2015 April 13 (this readme)
-date: 2015 April 10 (Carto Alpha)
+
+| Name | Author | tags | Readmedate | Appdate |
+| --- | --- | --- | --- | --- |
+| Cartomizer | JC Morningstar && Massimo Visconti | tarot, awesome, test, appsforwinners | 2015 April 13 | 2015 April 10 (Carto Alpha) |
 
 ---
 
